@@ -1,36 +1,49 @@
 
-/* ==========================================
-   NARUTO LEGACY — IDENTITÉ VISUELLE
-   Thème bleu nuit / indigo / lavande
-========================================== */
+/* =====================================================
+   NARUTO LEGACY
+   IDENTITÉ VISUELLE — DARK INDIGO / LAVANDE
+===================================================== */
 
 :root {
+  --nl-bg: #080C19;
+  --nl-card: #101831;
+  --nl-card-light: #171C39;
+  --nl-purple: #A58BFF;
+  --nl-blue: #829EFF;
+  --nl-ice: #91D9FF;
+  --nl-white: #F0F0FF;
+  --nl-muted: #BBC2DE;
+  --nl-border: rgba(143, 130, 255, 0.55);
+
   --md-primary-fg-color: #343B70;
   --md-primary-fg-color--light: #777DE0;
   --md-primary-fg-color--dark: #171B31;
   --md-accent-fg-color: #9297FF;
 }
 
-/* COULEURS GÉNÉRALES */
+/* =====================================================
+   COULEURS ET TYPOGRAPHIE GÉNÉRALES
+===================================================== */
+
 [data-md-color-scheme="slate"] {
-  --md-default-bg-color: #0D1020;
-  --md-default-bg-color--light: #171B31;
+  --md-default-bg-color: var(--nl-bg);
+  --md-default-bg-color--light: var(--nl-card);
   --md-default-bg-color--lighter: #222844;
 
-  --md-default-fg-color: #E5E7FF;
+  --md-default-fg-color: var(--nl-white);
   --md-default-fg-color--light: #C5C9F5;
 
-  --md-typeset-color: #E5E7FF;
-  --md-typeset-a-color: #9297FF;
+  --md-typeset-color: var(--nl-white);
+  --md-typeset-a-color: var(--nl-purple);
 }
 
-/* POLICE ET TYPOGRAPHIE */
 body {
+  background: var(--nl-bg) !important;
   font-family: "Segoe UI", "Trebuchet MS", sans-serif;
 }
 
 .md-typeset {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   line-height: 1.8;
 }
 
@@ -38,7 +51,7 @@ body {
 .md-typeset h2,
 .md-typeset h3,
 .md-typeset h4 {
-  color: #E5E7FF;
+  color: var(--nl-white);
   font-weight: 700;
   letter-spacing: 0.02em;
 }
@@ -58,7 +71,10 @@ body {
   color: #A9AEFF;
 }
 
-/* BARRE DE NAVIGATION */
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
 .md-header,
 .md-tabs {
   background: #090C18;
@@ -70,186 +86,21 @@ body {
 
 .md-tabs__link--active,
 .md-nav__link--active {
-  color: #9297FF !important;
+  color: var(--nl-purple) !important;
 }
 
-/* FOND DU SITE */
-.md-main {
-  background: #0D1020;
+.md-nav__link:hover {
+  color: var(--nl-blue) !important;
 }
 
-.md-content__inner {
-  max-width: 1100px;
+.md-search__input {
+  background: #101831;
+  border-radius: 10px;
 }
 
-/* BANNIÈRE D'ACCUEIL */
-.hero {
-  padding: 4rem 2rem;
-  margin: -0.6rem -0.6rem 2rem;
-  border: 1px solid #414777;
-  border-radius: 18px;
-  text-align: center;
-
-  background:
-    radial-gradient(
-      ellipse at 75% 15%,
-      rgba(119,125,224,.24),
-      transparent 40%
-    ),
-    linear-gradient(
-      135deg,
-      #222844 0%,
-      #171B31 50%,
-      #0D1020 100%
-    );
-
-  box-shadow: 0 10px 40px rgba(0,0,0,.25);
-}
-
-.hero-kicker {
-  color: #9297FF;
-  letter-spacing: .22em;
-  font-size: .75rem;
-  font-weight: 700;
-}
-
-.hero h1 {
-  color: #E5E7FF;
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
-  margin: .6rem 0;
-  letter-spacing: .08em;
-  border: none;
-}
-
-.hero p {
-  color: #C5C9F5;
-  font-size: 1rem;
-}
-
-/* CARTES DE NAVIGATION */
-.home-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: .85rem;
-  margin: 1.5rem 0;
-}
-
-.home-card {
-  display: flex;
-  flex-direction: column;
-  gap: .35rem;
-  min-height: 100px;
-  padding: 1.1rem;
-
-  border: 1px solid #343B70;
-  border-radius: 12px;
-
-  background: #171B31;
-  color: #E5E7FF !important;
-
-  text-decoration: none !important;
-  transition: all .22s ease;
-}
-
-.home-card:hover {
-  border-color: #9297FF;
-  background: #222844;
-  transform: translateY(-3px);
-  box-shadow: 0 5px 20px rgba(119,125,224,.12);
-}
-
-.home-card span {
-  color: #9297FF;
-  font-size: 1.5rem;
-}
-
-.home-card strong {
-  color: #E5E7FF;
-  font-size: 1rem;
-}
-
-.home-card small {
-  color: #AEB4D8;
-  font-size: .8rem;
-}
-
-/* ENCARTS */
-.home-note {
-  margin-top: 1.5rem;
-  padding: 1.2rem;
-
-  border-left: 3px solid #777DE0;
-  border-radius: 0 10px 10px 0;
-
-  background: #171B31;
-}
-
-.home-note p {
-  color: #C5C9F5;
-}
-
-/* TABLEAUX */
-.md-typeset table:not([class]) {
-  border: 1px solid #343B70;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.md-typeset table:not([class]) th {
-  background: #222844;
-  color: #9297FF;
-}
-
-.md-typeset table:not([class]) td {
-  border-color: #343B70;
-}
-
-/* BLOCS DE CITATION */
-.md-typeset blockquote {
-  border-left-color: #777DE0;
-  background: #171B31;
-}
-
-/* BOUTONS ET LIENS */
-.md-typeset a:hover {
-  color: #B8BCFF;
-}
-
-/* VERSION MOBILE */
-@media (max-width: 600px) {
-  .home-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero {
-    padding: 3rem 1rem;
-  }
-
-  .md-typeset h1 {
-    font-size: 1.8rem;
-  }
-}
-
-/* ============================================
-   NARUTO LEGACY — DARK AKATSUKI
-   HOMEPAGE REDESIGN
-============================================ */
-
-:root {
-  --nl-bg: #080C19;
-  --nl-card: #101831;
-  --nl-purple: #A58BFF;
-  --nl-blue: #829EFF;
-  --nl-ice: #91D9FF;
-  --nl-white: #F0F0FF;
-  --nl-muted: #BBC2DE;
-}
-
-/* FOND DE LA PAGE */
-
-body {
-  background: #080C19 !important;
-}
+/* =====================================================
+   FOND ET CONTENU
+===================================================== */
 
 .md-main {
   background:
@@ -258,14 +109,16 @@ body {
       rgba(48, 52, 110, 0.16),
       transparent 65%
     ),
-    #080C19 !important;
+    var(--nl-bg) !important;
 }
 
 .md-content {
   max-width: 1250px;
 }
 
-/* CONTENEUR */
+.md-content__inner {
+  max-width: 1250px;
+}
 
 .legacy-home {
   width: 100%;
@@ -274,7 +127,9 @@ body {
   color: var(--nl-white);
 }
 
-/* GRANDE BANNIÈRE */
+/* =====================================================
+   GRANDE BANNIÈRE
+===================================================== */
 
 .legacy-banner {
   position: relative;
@@ -282,8 +137,10 @@ body {
   width: 100%;
   height: 245px;
   margin: 12px 0 24px;
+
   border: 1px solid rgba(144, 139, 255, 0.7);
   border-radius: 18px;
+
   box-shadow:
     0 0 25px rgba(105, 113, 255, 0.20),
     inset 0 0 30px rgba(105, 113, 255, 0.10);
@@ -297,7 +154,9 @@ body {
   display: block;
 }
 
-/* INTRODUCTION */
+/* =====================================================
+   INTRODUCTION
+===================================================== */
 
 .legacy-intro {
   text-align: center;
@@ -347,7 +206,9 @@ body {
   );
 }
 
-/* GRILLE ASYMÉTRIQUE */
+/* =====================================================
+   GRILLE ASYMÉTRIQUE
+===================================================== */
 
 .legacy-grid {
   display: grid;
@@ -356,7 +217,9 @@ body {
   margin: 25px auto;
 }
 
-/* CARTES */
+/* =====================================================
+   CARTES PRINCIPALES
+===================================================== */
 
 .legacy-card {
   position: relative;
@@ -367,8 +230,9 @@ body {
   flex-direction: column;
   justify-content: center;
 
-  min-height: 155px;
-  padding: 18px 22px 18px 150px !important;
+  min-width: 0;
+  min-height: 170px;
+  padding: 22px 22px 22px 150px !important;
 
   color: var(--nl-white) !important;
   text-decoration: none !important;
@@ -385,17 +249,23 @@ body {
       #0D152B 75%
     ) !important;
 
-  border: 1px solid rgba(143, 130, 255, 0.65);
+  border: 1px solid var(--nl-border);
   border-radius: 17px;
 
   box-shadow:
     0 5px 20px rgba(0, 0, 0, 0.25),
     inset 0 0 20px rgba(106, 118, 230, 0.06);
 
-  transition: all 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease;
 }
 
-/* TAILLES ASYMÉTRIQUES */
+/* =====================================================
+   DISPOSITION DES CARTES
+===================================================== */
 
 .legacy-wide {
   grid-column: span 7;
@@ -407,11 +277,13 @@ body {
 
 .legacy-small {
   grid-column: span 3;
-  min-height: 150px;
+  min-height: 160px;
   padding-left: 105px !important;
 }
 
-/* NUMÉROS */
+/* =====================================================
+   NUMÉROTATION
+===================================================== */
 
 .legacy-number {
   display: block;
@@ -419,9 +291,12 @@ body {
   font-size: 1.25rem;
   font-weight: 800;
   margin-bottom: 3px;
+  letter-spacing: 0.04em;
 }
 
-/* ICÔNES */
+/* =====================================================
+   ICÔNES
+===================================================== */
 
 .legacy-icon {
   position: absolute;
@@ -448,6 +323,8 @@ body {
   box-shadow:
     0 0 18px rgba(130, 112, 255, 0.18),
     inset 0 0 18px rgba(130, 112, 255, 0.13);
+
+  transition: all 0.35s ease;
 }
 
 .legacy-small .legacy-icon {
@@ -457,7 +334,9 @@ body {
   font-size: 2.2rem;
 }
 
-/* TITRES */
+/* =====================================================
+   TITRES ET DESCRIPTIONS
+===================================================== */
 
 .legacy-card strong {
   display: block;
@@ -467,9 +346,8 @@ body {
   text-transform: uppercase;
   margin: 0 0 4px;
   letter-spacing: 0.02em;
+  line-height: 1.4;
 }
-
-/* DESCRIPTIONS */
 
 .legacy-card small {
   display: block;
@@ -478,19 +356,24 @@ body {
   line-height: 1.5;
 }
 
-/* LIENS */
+/* =====================================================
+   LIENS DES CARTES
+===================================================== */
 
 .legacy-link {
   display: block;
   margin-top: 10px;
   color: var(--nl-purple);
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.02em;
+  transition: color 0.25s ease;
 }
 
-/* VARIATIONS DE COULEURS */
+/* =====================================================
+   VARIATIONS DE COULEURS
+===================================================== */
 
 .legacy-card:nth-child(4n + 2) {
   border-color: rgba(104, 179, 255, 0.7);
@@ -505,7 +388,9 @@ body {
   border-color: rgba(165, 139, 255, 0.7);
 }
 
-/* SURVOL */
+/* =====================================================
+   ANIMATIONS AU SURVOL
+===================================================== */
 
 .legacy-card:hover {
   transform: translateY(-6px);
@@ -531,6 +416,7 @@ body {
 .legacy-card:hover .legacy-icon {
   box-shadow:
     0 0 30px rgba(158, 133, 255, 0.45);
+
   transform: translateY(-50%) scale(1.07);
 }
 
@@ -538,7 +424,9 @@ body {
   color: #D0C2FF;
 }
 
-/* PIED DE PAGE */
+/* =====================================================
+   PIED DE PAGE
+===================================================== */
 
 .legacy-footer {
   display: flex;
@@ -569,14 +457,66 @@ body {
   color: var(--nl-purple);
 }
 
-/* TABLETTES */
+/* =====================================================
+   ENCARTS
+===================================================== */
+
+.home-note {
+  margin-top: 1.5rem;
+  padding: 1.2rem;
+  border-left: 3px solid #777DE0;
+  border-radius: 0 10px 10px 0;
+  background: var(--nl-card);
+}
+
+.home-note p {
+  color: #C5C9F5;
+}
+
+/* =====================================================
+   TABLEAUX
+===================================================== */
+
+.md-typeset table:not([class]) {
+  border: 1px solid #343B70;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+  background: #222844;
+  color: var(--nl-purple);
+}
+
+.md-typeset table:not([class]) td {
+  border-color: #343B70;
+}
+
+/* =====================================================
+   CITATIONS
+===================================================== */
+
+.md-typeset blockquote {
+  border-left-color: #777DE0;
+  background: var(--nl-card);
+}
+
+/* =====================================================
+   LIENS
+===================================================== */
+
+.md-typeset a:hover {
+  color: #B8BCFF;
+}
+
+/* =====================================================
+   RESPONSIVE — TABLETTES
+===================================================== */
 
 @media (max-width: 900px) {
-  .legacy-wide,
-  .legacy-standard {
-    grid-column: span 6;
-  }
 
+  .legacy-wide,
+  .legacy-standard,
   .legacy-small {
     grid-column: span 6;
   }
@@ -590,13 +530,21 @@ body {
     width: 75px;
     height: 75px;
   }
+
+  .legacy-small .legacy-icon {
+    left: 15px;
+  }
 }
 
-/* MOBILES */
+/* =====================================================
+   RESPONSIVE — MOBILES
+===================================================== */
 
 @media (max-width: 600px) {
+
   .legacy-banner {
     height: 150px;
+    border-radius: 12px;
   }
 
   .legacy-grid {
@@ -625,7 +573,39 @@ body {
     font-size: 1.15rem;
   }
 
+  .legacy-card small {
+    font-size: 0.82rem;
+  }
+
+  .legacy-intro {
+    margin-top: 20px;
+  }
+
   .legacy-intro p {
     font-size: 0.9rem;
+  }
+
+  .legacy-divider {
+    gap: 12px;
+  }
+
+  .md-typeset h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* =====================================================
+   ACCESSIBILITÉ — ANIMATIONS
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .legacy-card,
+  .legacy-icon,
+  .legacy-link {
+    transition: none !important;
+  }
+
+  .legacy-card:hover {
+    transform: none;
   }
 }
