@@ -648,4 +648,43 @@ body {
     grid-column: 1 / -1;
   }
 }
+/* ==========================================
+   NARUTO LEGACY — PLEINE LARGEUR
+========================================== */
+
+/* Libérer la largeur générale */
+.md-grid {
+  max-width: 100% !important;
+}
+
+.md-content {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+.md-content__inner {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* Libérer notre page d'accueil */
+.legacy-home {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 auto !important;
+}
+
+/* Grille sur toute la largeur */
+.legacy-grid {
+  width: 100% !important;
+  max-width: none !important;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+/* Éviter les débordements */
+.legacy-card {
+  min-width: 0;
+  box-sizing: border-box;
+}
+
 
