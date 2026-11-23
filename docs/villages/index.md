@@ -23,9 +23,9 @@
 
   <div class="village-grid village-grid-single">
 
-    <div class="village-card village-konoha">
+    <a class="village-card village-konoha" href="konoha/">
 
-      <div class="village-card-symbol">木</div>
+      <div class="village-card-symbol">木</a>
 
       <span class="village-status">
         VILLAGE CACHÉ DE LA FEUILLE
@@ -40,13 +40,11 @@
       </p>
 
       <div class="village-card-footer">
-        ARCHIVES OFFICIELLES — NARUTO LEGACY
-      </div>
-
+    <span>CONSULTER LES ARCHIVES</span>
+    <span class="village-card-arrow">→</span>
     </div>
 
-  </div>
-
+  </a>
   <div class="village-notice">
     <span>卷</span>
     <div>
