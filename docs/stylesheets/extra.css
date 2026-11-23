@@ -609,3 +609,43 @@ body {
     transform: none;
   }
 }
+/* ==========================================
+   CORRECTION — LARGEUR DES CARTES
+========================================== */
+
+.legacy-small {
+  grid-column: span 6;
+  min-height: 155px;
+  padding-left: 115px !important;
+}
+
+.legacy-card {
+  padding-left: 125px !important;
+  min-width: 0;
+}
+
+.legacy-icon {
+  left: 20px;
+  width: 80px;
+  height: 80px;
+}
+
+.legacy-small .legacy-icon {
+  left: 15px;
+  width: 75px;
+  height: 75px;
+}
+
+.legacy-card strong {
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .legacy-small {
+    grid-column: 1 / -1;
+  }
+}
+
