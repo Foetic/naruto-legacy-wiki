@@ -1251,4 +1251,119 @@ body {
     transform: none !important;
   }
 }
+/* ==========================================
+   NARUTO LEGACY — PAGES INTÉRIEURES
+========================================== */
+
+/* TITRES PRINCIPAUX */
+
+.md-typeset h1 {
+  font-family: Georgia, serif !important;
+  font-size: 2.5rem !important;
+  letter-spacing: 0.015em;
+  padding-bottom: 18px !important;
+  border-bottom: 1px solid rgba(143, 130, 255, .5) !important;
+
+  background: linear-gradient(
+    90deg,
+    #F0F0FF,
+    #B9A0FF
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SOUS-TITRES */
+
+.md-typeset h2 {
+  font-family: Georgia, serif;
+  font-size: 1.65rem;
+  margin-top: 2.5rem !important;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(143, 130, 255, .3);
+}
+
+.md-typeset h3 {
+  color: #B9A6FF !important;
+  font-size: 1.2rem;
+  margin-top: 1.8rem;
+}
+
+/* PARAGRAPHES */
+
+.md-typeset p {
+  line-height: 1.85;
+  color: #D0D4EF;
+}
+
+/* ENCARTS */
+
+.md-typeset .admonition {
+  background: #111831 !important;
+  border: 1px solid rgba(143, 130, 255, .55) !important;
+  border-left: 4px solid #9297FF !important;
+  border-radius: 12px !important;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, .2);
+  overflow: hidden;
+}
+
+/* EN-TÊTES DES ENCARTS */
+
+.md-typeset .admonition-title {
+  background: rgba(119, 125, 224, .17) !important;
+  color: #C2B0FF !important;
+  font-weight: 800;
+}
+
+/* CONTENU DES ENCARTS */
+
+.md-typeset .admonition p {
+  color: #D8DAF5;
+}
+
+/* CITATIONS */
+
+.md-typeset blockquote {
+  border-left: 3px solid #9297FF !important;
+  background: #111831;
+  border-radius: 0 10px 10px 0;
+  padding: 12px 20px;
+}
+
+/* LIENS */
+
+.md-typeset a {
+  color: #A99AFF;
+  transition: color .2s ease;
+}
+
+.md-typeset a:hover {
+  color: #C9BCFF;
+}
+
+/* LISTES */
+
+.md-typeset li {
+  margin-bottom: .45rem;
+}
+
+/* TABLEAUX */
+
+.md-typeset table:not([class]) {
+  border: 1px solid #343B70;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+  background: #222844 !important;
+  color: #B9A6FF !important;
+}
+
+.md-typeset table:not([class]) td {
+  background: #101831;
+  border-color: #343B70;
+}
+
 
