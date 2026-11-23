@@ -1,0 +1,61 @@
+site_name: RP Narratif Naruto Legacy
+site_description: Encyclopédie du monde ninja — lore, règlement et ressources du serveur RP Naruto Legacy.
+site_url: https://VOTRE-PSEUDO.github.io/naruto-legacy-wiki/
+repo_name: naruto-legacy-wiki
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: fr
+  logo: null
+  favicon: null
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: amber
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - content.code.copy
+
+plugins:
+  - search:
+      lang: fr
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Accueil: index.md
+  - Règlement:
+      - règlement/index.md
+      - Règles générales: règlement/regles-generales.md
+      - Règles RP: règlement/regles-rp.md
+      - Règles de combat: règlement/regles-combat.md
+  - Lexique RP: lexique/index.md
+  - Univers & Lore:
+      - univers/index.md
+      - Chronologie: univers/chronologie.md
+  - Villages: villages/index.md
+  - Clans: clans/index.md
+  - Système de combat:
+      - Techniques: combat/techniques.md
+      - Passifs: combat/passifs.md
+      - Affinités: combat/affinites.md
+  - Archives: archives/index.md
