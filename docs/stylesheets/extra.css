@@ -1365,5 +1365,178 @@ body {
   background: #101831;
   border-color: #343B70;
 }
+/* Masquer le symbole d'ancrage des titres */
+
+.md-typeset .headerlink {
+  display: none !important;
+}
+
+/* ==========================================
+   NARUTO LEGACY — GRIMOIRE NINJA ANCESTRAL
+   Identité visuelle des pages intérieures
+========================================== */
+
+:root {
+  --nl-ink: #090d1c;
+  --nl-parchment: #c8c0e8;
+  --nl-lavender: #a58aff;
+  --nl-violet: #7662c9;
+  --nl-cyan: #65c9f5;
+  --nl-border: rgba(165, 138, 255, .38);
+}
+
+/* TITRES — ARCHIVES ANCESTRALES */
+
+.md-typeset h1 {
+  color: #eeeaff;
+  font-family: Georgia, serif;
+  letter-spacing: .5px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--nl-border);
+}
+
+.md-typeset h2 {
+  color: #c4adff;
+  font-family: Georgia, serif;
+  padding: 12px 0 10px 16px;
+  border-left: 3px solid var(--nl-lavender);
+  border-bottom: 1px solid rgba(165, 138, 255, .18);
+  margin-top: 38px;
+}
+
+.md-typeset h3 {
+  color: #8dcfff;
+  font-family: Georgia, serif;
+  letter-spacing: .3px;
+  margin-top: 28px;
+}
+
+/* ROULEAUX — ENCARTS D'INFORMATION */
+
+.md-typeset .admonition {
+  background: linear-gradient(
+    135deg,
+    rgba(105, 84, 174, .20),
+    rgba(15, 23, 49, .92)
+  );
+  border: 1px solid var(--nl-border);
+  border-left: 4px solid var(--nl-lavender);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, .18);
+}
+
+.md-typeset .admonition-title {
+  background: rgba(126, 101, 205, .19);
+  color: #d0bdff;
+  font-family: Georgia, serif;
+  letter-spacing: .4px;
+}
+
+/* DOSSIERS ANBU */
+
+.md-typeset .admonition.danger {
+  background: linear-gradient(
+    135deg,
+    rgba(40, 24, 47, .95),
+    rgba(10, 12, 25, .98)
+  );
+  border-color: rgba(190, 105, 145, .55);
+  border-left-color: #bd658e;
+}
+
+.md-typeset .admonition.danger .admonition-title {
+  background: rgba(155, 65, 110, .18);
+  color: #e5a3c4;
+}
+
+/* TABLEAUX — REGISTRES SHINOBI */
+
+.md-typeset table:not([class]) {
+  display: table;
+  width: 100%;
+  border: 1px solid var(--nl-border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(16, 23, 48, .65);
+}
+
+.md-typeset table:not([class]) th {
+  background: rgba(112, 91, 190, .30);
+  color: #d2bdff;
+  font-family: Georgia, serif;
+  border-bottom: 1px solid var(--nl-border);
+}
+
+.md-typeset table:not([class]) td {
+  border-bottom: 1px solid rgba(165, 138, 255, .13);
+}
+
+.md-typeset table:not([class]) tr:hover td {
+  background: rgba(130, 105, 215, .09);
+}
+
+/* PARCHEMINS — CITATIONS ET EXTRAITS */
+
+.md-typeset blockquote {
+  background: linear-gradient(
+    110deg,
+    rgba(115, 94, 177, .16),
+    rgba(15, 20, 42, .55)
+  );
+  border-left: 3px solid var(--nl-lavender);
+  border-radius: 0 10px 10px 0;
+  padding: 14px 20px;
+  color: #c5c4df;
+}
+
+/* SÉPARATEURS */
+
+.md-typeset hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(165, 138, 255, .65),
+    transparent
+  );
+  margin: 36px 0;
+}
+
+/* BLOCS DE CODE — ARCHIVES TECHNIQUES */
+
+.md-typeset pre {
+  border: 1px solid rgba(105, 201, 245, .28);
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .18);
+}
+
+/* LIENS */
+
+.md-typeset a {
+  transition: color .2s ease;
+}
+
+.md-typeset a:hover {
+  color: #b9a0ff;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .md-typeset h1 {
+    font-size: 1.8rem;
+  }
+
+  .md-typeset h2 {
+    font-size: 1.35rem;
+  }
+
+  .md-typeset table:not([class]) {
+    font-size: .8rem;
+  }
+}
+
 
 
