@@ -1778,6 +1778,160 @@ a.village-konoha:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 35px rgba(155, 125, 255, .28);
 }
+/* =====================================
+   ARCHIVES DE KONOHA
+===================================== */
+
+.konoha-archive {
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+.konoha-hero {
+  position: relative;
+  text-align: center;
+  padding: 65px 25px;
+  margin-bottom: 55px;
+  overflow: hidden;
+  border: 1px solid rgba(157, 133, 255, .45);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at center,
+      rgba(130, 100, 210, .23),
+      transparent 65%),
+    linear-gradient(145deg, #171d39, #090d1d);
+  box-shadow: 0 0 35px rgba(105, 113, 255, .12);
+}
+
+.konoha-eyebrow,
+.konoha-label {
+  color: #a78aff;
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.konoha-emblem {
+  width: 105px;
+  height: 105px;
+  margin: 25px auto;
+  display: grid;
+  place-items: center;
+  border: 2px solid #a78aff;
+  border-radius: 50%;
+  color: #bda5ff;
+  font-size: 4rem;
+  box-shadow: 0 0 25px rgba(167, 138, 255, .2);
+}
+
+.konoha-hero h2 {
+  color: #c3a5ff;
+  font-size: 3rem;
+  margin: 15px 0 5px;
+}
+
+.konoha-subtitle {
+  color: #c1c7e3;
+  font-size: 1.15rem;
+}
+
+.konoha-seal {
+  margin-top: 30px;
+  color: #a78aff;
+  font-size: .7rem;
+  letter-spacing: 3px;
+}
+
+.konoha-introduction {
+  margin: 45px 0 30px;
+  padding-left: 22px;
+  border-left: 3px solid #a78aff;
+}
+
+.konoha-introduction h3 {
+  color: #c3a5ff;
+  font-size: 1.8rem;
+}
+
+.konoha-sections {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  margin-bottom: 60px;
+}
+
+.konoha-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 23px;
+  border: 1px solid rgba(145, 130, 235, .4);
+  border-radius: 12px;
+  background: linear-gradient(120deg, #202449, #11182e);
+  text-decoration: none !important;
+  color: #f0edff !important;
+  transition: .25s ease;
+}
+
+.konoha-section:hover {
+  transform: translateY(-4px);
+  border-color: #a78aff;
+  box-shadow: 0 0 22px rgba(167, 138, 255, .15);
+}
+
+.konoha-section > span {
+  color: #a78aff;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.konoha-section h3 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+}
+
+.konoha-section p {
+  margin: 0;
+  color: #9da7c5;
+  font-size: .85rem;
+}
+
+.konoha-section b {
+  margin-left: auto;
+  color: #a78aff;
+}
+
+.konoha-records section {
+  margin: 35px 0;
+  scroll-margin-top: 100px;
+}
+
+.konoha-records h3 {
+  color: #c3a5ff;
+  font-size: 1.45rem;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(145, 130, 235, .35);
+}
+
+.konoha-placeholder {
+  padding: 25px;
+  border: 1px solid rgba(145, 130, 235, .3);
+  border-left: 3px solid #a78aff;
+  border-radius: 10px;
+  background: rgba(24, 31, 59, .8);
+  color: #a5aecb;
+}
+
+@media (max-width: 650px) {
+  .konoha-sections {
+    grid-template-columns: 1fr;
+  }
+
+  .konoha-hero h2 {
+    font-size: 2.1rem;
+  }
+}
+
 
 
 
