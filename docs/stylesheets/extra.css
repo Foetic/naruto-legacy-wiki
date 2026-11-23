@@ -1170,3 +1170,85 @@ body {
     font-size: 0.8rem !important;
   }
 }
+/* ==========================================
+   NARUTO LEGACY — PREMIUM HOVER EFFECTS
+========================================== */
+
+/* LIENS DES PETITES CARTES */
+
+.legacy-small .legacy-link {
+  font-size: 0 !important;
+  white-space: nowrap;
+}
+
+.legacy-small .legacy-link::after {
+  content: "EXPLORER →";
+  font-size: 0.72rem;
+}
+
+/* TRANSITIONS */
+
+.legacy-card {
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease !important;
+}
+
+/* EFFET AU SURVOL */
+
+.legacy-card:hover {
+  transform: translateY(-5px) !important;
+
+  border-color: #B9A5FF !important;
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.35),
+    0 0 22px rgba(143, 119, 255, 0.25),
+    inset 0 0 25px rgba(143, 119, 255, 0.08) !important;
+}
+
+/* ICÔNES */
+
+.legacy-icon {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease !important;
+}
+
+.legacy-card:hover .legacy-icon {
+  transform: translateY(-50%) scale(1.08) !important;
+
+  box-shadow:
+    0 0 28px rgba(165, 139, 255, 0.4),
+    inset 0 0 20px rgba(165, 139, 255, 0.2) !important;
+
+  background: rgba(119, 105, 220, 0.25);
+}
+
+/* LIENS */
+
+.legacy-card .legacy-link {
+  transition: color 0.3s ease;
+}
+
+.legacy-card:hover .legacy-link {
+  color: #D5C8FF !important;
+}
+
+/* ACCESSIBILITÉ */
+
+@media (prefers-reduced-motion: reduce) {
+  .legacy-card,
+  .legacy-icon,
+  .legacy-link {
+    transition: none !important;
+  }
+
+  .legacy-card:hover {
+    transform: none !important;
+  }
+}
+
