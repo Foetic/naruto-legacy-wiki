@@ -25,7 +25,7 @@
 
     <a class="village-card village-konoha" href="konoha/">
 
-      <div class="village-card-symbol">木</a>
+      <div class="village-card-symbol">木</div>
 
       <span class="village-status">
         VILLAGE CACHÉ DE LA FEUILLE
@@ -45,6 +45,9 @@
     </div>
 
   </a>
+
+  </div>
+
   <div class="village-notice">
     <span>卷</span>
     <div>
