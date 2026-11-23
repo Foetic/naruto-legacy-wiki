@@ -2,12 +2,13 @@
 <div class="village-archive">
 
   <div class="village-heading">
-    <span class="village-eyebrow">ARCHIVES DES CINQ NATIONS</span>
-    <h2>Les villages shinobi</h2>
+    <span class="village-eyebrow">ARCHIVES DE KONOHA</span>
+    <h2>Konohagakure</h2>
     <p>
-      Découvrez les villages, leurs organisations,
-      leurs traditions et les structures qui façonnent
-      le monde shinobi de Naruto Legacy.
+      Le Village Caché de la Feuille.
+      Découvrez son organisation, son histoire,
+      ses institutions et les shinobi qui composent
+      ses rangs.
     </p>
     <div class="village-divider">✧</div>
   </div>
@@ -15,39 +16,33 @@
   <div class="village-section-title">
     <span>01</span>
     <div>
-      <h3>Registre des villages</h3>
-      <p>Répertoire des villages officiellement documentés.</p>
+      <h3>Registre du village</h3>
+      <p>Les archives officielles de Konoha.</p>
     </div>
   </div>
 
-  <div class="village-grid">
+  <div class="village-grid village-grid-single">
 
-    <div class="village-card">
-      <div class="village-card-symbol">鳥</div>
-      <span class="village-status">FICHE À COMPLÉTER</span>
-      <h3>Village à définir</h3>
-      <p>Emblème, localisation et présentation officielle.</p>
-    </div>
+    <div class="village-card village-konoha">
 
-    <div class="village-card">
-      <div class="village-card-symbol">風</div>
-      <span class="village-status">FICHE À COMPLÉTER</span>
-      <h3>Village à définir</h3>
-      <p>Emblème, localisation et présentation officielle.</p>
-    </div>
+      <div class="village-card-symbol">木</div>
 
-    <div class="village-card">
-      <div class="village-card-symbol">水</div>
-      <span class="village-status">FICHE À COMPLÉTER</span>
-      <h3>Village à définir</h3>
-      <p>Emblème, localisation et présentation officielle.</p>
-    </div>
+      <span class="village-status">
+        VILLAGE CACHÉ DE LA FEUILLE
+      </span>
 
-    <div class="village-card">
-      <div class="village-card-symbol">雷</div>
-      <span class="village-status">FICHE À COMPLÉTER</span>
-      <h3>Village à définir</h3>
-      <p>Emblème, localisation et présentation officielle.</p>
+      <h3>Konohagakure</h3>
+
+      <p>
+        Retrouvez les informations relatives
+        au village, à ses institutions,
+        à son organisation et à son histoire.
+      </p>
+
+      <div class="village-card-footer">
+        ARCHIVES OFFICIELLES — NARUTO LEGACY
+      </div>
+
     </div>
 
   </div>
@@ -57,9 +52,8 @@
     <div>
       <strong>Archives en cours de constitution</strong>
       <p>
-        Les fiches seront enrichies progressivement
-        à partir des informations officielles validées
-        par le staff de Naruto Legacy.
+        Les informations seront ajoutées progressivement
+        à partir du lore et des éléments validés par le staff.
       </p>
     </div>
   </div>
