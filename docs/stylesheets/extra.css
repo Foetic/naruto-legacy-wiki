@@ -1,53 +1,231 @@
+
+/* ==========================================
+   NARUTO LEGACY — IDENTITÉ VISUELLE
+   Thème bleu nuit / indigo / lavande
+========================================== */
+
 :root {
-  --md-primary-fg-color: #8e4937;
-  --md-primary-fg-color--light: #b96b4b;
-  --md-primary-fg-color--dark: #603024;
-  --md-accent-fg-color: #d6a45c;
+  --md-primary-fg-color: #343B70;
+  --md-primary-fg-color--light: #777DE0;
+  --md-primary-fg-color--dark: #171B31;
+  --md-accent-fg-color: #9297FF;
 }
+
+/* COULEURS GÉNÉRALES */
 [data-md-color-scheme="slate"] {
-  --md-default-bg-color: #211b1b;
-  --md-default-bg-color--light: #2b2221;
-  --md-default-bg-color--lighter: #342927;
-  --md-default-fg-color: #f0d6bd;
-  --md-default-fg-color--light: #d6b9a4;
-  --md-typeset-color: #f0d6bd;
-  --md-typeset-a-color: #e0aa65;
+  --md-default-bg-color: #0D1020;
+  --md-default-bg-color--light: #171B31;
+  --md-default-bg-color--lighter: #222844;
+
+  --md-default-fg-color: #E5E7FF;
+  --md-default-fg-color--light: #C5C9F5;
+
+  --md-typeset-color: #E5E7FF;
+  --md-typeset-a-color: #9297FF;
 }
-.md-header, .md-tabs { background: #171313; }
-.md-main { background: #211b1b; }
-.md-content__inner { max-width: 1100px; }
+
+/* POLICE ET TYPOGRAPHIE */
+body {
+  font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+}
+
+.md-typeset {
+  font-size: 0.85rem;
+  line-height: 1.8;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  color: #E5E7FF;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.md-typeset h1 {
+  font-size: 2.2rem;
+  border-bottom: 1px solid #343B70;
+  padding-bottom: 0.5rem;
+}
+
+.md-typeset h2 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+.md-typeset strong {
+  color: #A9AEFF;
+}
+
+/* BARRE DE NAVIGATION */
+.md-header,
+.md-tabs {
+  background: #090C18;
+}
+
+.md-header {
+  border-bottom: 1px solid #343B70;
+}
+
+.md-tabs__link--active,
+.md-nav__link--active {
+  color: #9297FF !important;
+}
+
+/* FOND DU SITE */
+.md-main {
+  background: #0D1020;
+}
+
+.md-content__inner {
+  max-width: 1100px;
+}
+
+/* BANNIÈRE D'ACCUEIL */
 .hero {
-  padding: 4.2rem 2rem 3.2rem;
+  padding: 4rem 2rem;
   margin: -0.6rem -0.6rem 2rem;
-  border: 1px solid #684333;
+  border: 1px solid #414777;
   border-radius: 18px;
   text-align: center;
+
   background:
-    radial-gradient(ellipse at 75% 15%, rgba(160,65,44,.35), transparent 34%),
-    radial-gradient(ellipse at 15% 90%, rgba(112,55,42,.3), transparent 42%),
-    linear-gradient(135deg, #342321 0%, #211b1b 55%, #171313 100%);
-  box-shadow: inset 0 0 70px rgba(0,0,0,.25);
+    radial-gradient(
+      ellipse at 75% 15%,
+      rgba(119,125,224,.24),
+      transparent 40%
+    ),
+    linear-gradient(
+      135deg,
+      #222844 0%,
+      #171B31 50%,
+      #0D1020 100%
+    );
+
+  box-shadow: 0 10px 40px rgba(0,0,0,.25);
 }
-.hero-kicker { color: #d6a45c; letter-spacing: .22em; font-size: .72rem; font-weight: 700; }
-.hero h1 { color: #f0d6bd; font-size: clamp(2.2rem, 6vw, 4rem); margin: .55rem 0 .25rem; letter-spacing: .06em; }
-.hero p { color: #d6b9a4; font-size: 1rem; margin: 0; }
-.home-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .75rem; margin: 1.4rem 0; }
+
+.hero-kicker {
+  color: #9297FF;
+  letter-spacing: .22em;
+  font-size: .75rem;
+  font-weight: 700;
+}
+
+.hero h1 {
+  color: #E5E7FF;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  margin: .6rem 0;
+  letter-spacing: .08em;
+  border: none;
+}
+
+.hero p {
+  color: #C5C9F5;
+  font-size: 1rem;
+}
+
+/* CARTES DE NAVIGATION */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .85rem;
+  margin: 1.5rem 0;
+}
+
 .home-card {
-  display: flex; flex-direction: column; gap: .25rem;
-  min-height: 92px; padding: 1rem;
-  border: 1px solid #70402e; border-radius: 10px;
-  background: #2a2221; color: #f0d6bd !important;
-  text-decoration: none !important; transition: .18s ease;
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+  min-height: 100px;
+  padding: 1.1rem;
+
+  border: 1px solid #343B70;
+  border-radius: 12px;
+
+  background: #171B31;
+  color: #E5E7FF !important;
+
+  text-decoration: none !important;
+  transition: all .22s ease;
 }
-.home-card:hover { border-color: #d6a45c; background: #352725; transform: translateY(-2px); }
-.home-card span { color: #d6a45c; font-size: 1.35rem; line-height: 1; }
-.home-card strong { font-size: 1rem; }
-.home-card small { color: #d6b9a4; font-size: .78rem; }
-.home-note { margin-top: 1.5rem; padding: 1rem 1.2rem; border-left: 3px solid #d6a45c; background: #2a2221; border-radius: 0 8px 8px 0; }
-.home-note p { margin: .35rem 0 0; color: #d6b9a4; }
-.md-typeset h1, .md-typeset h2, .md-typeset h3 { color: #f0d6bd; }
-.md-nav__link--active { color: #e0aa65 !important; }
+
+.home-card:hover {
+  border-color: #9297FF;
+  background: #222844;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(119,125,224,.12);
+}
+
+.home-card span {
+  color: #9297FF;
+  font-size: 1.5rem;
+}
+
+.home-card strong {
+  color: #E5E7FF;
+  font-size: 1rem;
+}
+
+.home-card small {
+  color: #AEB4D8;
+  font-size: .8rem;
+}
+
+/* ENCARTS */
+.home-note {
+  margin-top: 1.5rem;
+  padding: 1.2rem;
+
+  border-left: 3px solid #777DE0;
+  border-radius: 0 10px 10px 0;
+
+  background: #171B31;
+}
+
+.home-note p {
+  color: #C5C9F5;
+}
+
+/* TABLEAUX */
+.md-typeset table:not([class]) {
+  border: 1px solid #343B70;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+  background: #222844;
+  color: #9297FF;
+}
+
+.md-typeset table:not([class]) td {
+  border-color: #343B70;
+}
+
+/* BLOCS DE CITATION */
+.md-typeset blockquote {
+  border-left-color: #777DE0;
+  background: #171B31;
+}
+
+/* BOUTONS ET LIENS */
+.md-typeset a:hover {
+  color: #B8BCFF;
+}
+
+/* VERSION MOBILE */
 @media (max-width: 600px) {
-  .home-grid { grid-template-columns: 1fr; }
-  .hero { padding: 3rem 1rem 2.5rem; }
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .md-typeset h1 {
+    font-size: 1.8rem;
+  }
 }
