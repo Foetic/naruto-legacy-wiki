@@ -1546,6 +1546,193 @@ body {
   margin: 0 auto 20px !important;
   background: none !important;
 }
+/* =====================================
+   NARUTO LEGACY — ARCHIVES DES VILLAGES
+===================================== */
+
+.village-archive {
+  margin: 35px 0;
+}
+
+.village-heading {
+  text-align: center;
+  padding: 35px 20px 45px;
+  margin-bottom: 35px;
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(105, 83, 180, .19),
+      transparent 72%
+    );
+  border-bottom: 1px solid rgba(165, 138, 255, .25);
+}
+
+.village-eyebrow {
+  color: #8bceff;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.village-heading h2 {
+  border: none !important;
+  padding: 15px 0 !important;
+  color: #c2a5ff;
+  font-family: Georgia, serif;
+  font-size: 2.2rem;
+}
+
+.village-heading p {
+  max-width: 650px;
+  margin: auto;
+  color: #aeb5d0;
+  line-height: 1.9;
+}
+
+.village-divider {
+  color: #a78aff;
+  font-size: 1.7rem;
+  margin-top: 25px;
+}
+
+.village-section-title {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 40px 0 25px;
+}
+
+.village-section-title > span {
+  color: #a78aff;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.village-section-title h3 {
+  margin: 0 !important;
+  color: #eeeaff;
+  font-family: Georgia, serif;
+}
+
+.village-section-title p {
+  margin: 5px 0 0;
+  color: #929bb9;
+}
+
+.village-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.village-card {
+  position: relative;
+  overflow: hidden;
+  padding: 28px;
+  min-height: 210px;
+  border: 1px solid rgba(144, 139, 255, .48);
+  border-radius: 15px;
+  background:
+    radial-gradient(
+      circle at 0% 100%,
+      rgba(116, 91, 199, .24),
+      transparent 65%
+    ),
+    linear-gradient(135deg, #171e3a, #0d1429);
+  transition: transform .25s ease, border-color .25s ease,
+              box-shadow .25s ease;
+}
+
+.village-card:nth-child(even) {
+  border-color: rgba(90, 177, 255, .48);
+}
+
+.village-card:hover {
+  transform: translateY(-5px);
+  border-color: #a78aff;
+  box-shadow: 0 10px 30px rgba(111, 87, 210, .18);
+}
+
+.village-card-symbol {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 18px;
+  border: 1px solid #a78aff;
+  border-radius: 50%;
+  color: #bca4ff;
+  font-size: 2rem;
+  background: rgba(139, 111, 226, .12);
+}
+
+.village-card:nth-child(even) .village-card-symbol {
+  color: #78d3ff;
+  border-color: #65baff;
+}
+
+.village-status {
+  display: block;
+  color: #a78aff;
+  font-size: .65rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.village-card h3 {
+  color: #f0edff !important;
+  font-family: Georgia, serif;
+  margin: 0 0 10px !important;
+}
+
+.village-card p {
+  color: #9ca6c4;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.village-notice {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 35px;
+  padding: 22px;
+  border: 1px solid rgba(165, 138, 255, .3);
+  border-left: 4px solid #a78aff;
+  border-radius: 10px;
+  background: rgba(112, 91, 190, .12);
+}
+
+.village-notice > span {
+  font-size: 2rem;
+  color: #b99aff;
+}
+
+.village-notice strong {
+  color: #d0bdff;
+}
+
+.village-notice p {
+  color: #aab2ce;
+  margin: 5px 0 0;
+}
+
+@media (max-width: 650px) {
+  .village-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .village-heading h2 {
+    font-size: 1.7rem;
+  }
+
+  .village-card {
+    min-height: auto;
+  }
+}
+
 
 
 
