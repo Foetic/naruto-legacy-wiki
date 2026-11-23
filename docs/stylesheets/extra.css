@@ -994,18 +994,16 @@ body {
     transition: none !important;
   }
 }
+
 /* ==========================================
-   BANNIÈRE — FORMAT PANORAMIQUE
-   LOGO ORIGINAL PRÉSERVÉ
+   BANNIÈRE — PANORAMIQUE NARUTO LEGACY
 ========================================== */
 
 .legacy-banner {
   position: relative;
   display: block;
   width: 100%;
-
-  aspect-ratio: 3 / 1;
-  height: auto !important;
+  height: 410px !important;
   min-height: 0 !important;
   max-height: none !important;
 
@@ -1022,30 +1020,23 @@ body {
 
 .legacy-banner img {
   display: block !important;
-
   width: 100% !important;
   height: 100% !important;
 
-  max-width: 100% !important;
+  max-width: none !important;
   max-height: none !important;
 
   object-fit: cover !important;
-  object-position: center 52% !important;
+  object-position: center center !important;
 
   transform: none !important;
 }
 
-/* VERSION MOBILE */
+/* MOBILE */
 
 @media (max-width: 600px) {
   .legacy-banner {
-    aspect-ratio: 16 / 9;
+    height: 190px !important;
     border-radius: 12px;
   }
 }
-
-
-
-
-
-
