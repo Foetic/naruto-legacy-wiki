@@ -1767,6 +1767,16 @@ body {
   font-size: .68rem;
   font-weight: 800;
   letter-spacing: 2px;
+}a.village-konoha {
+  display: block;
+  color: inherit !important;
+  text-decoration: none !important;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+a.village-konoha:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 35px rgba(155, 125, 255, .28);
 }
 
 
