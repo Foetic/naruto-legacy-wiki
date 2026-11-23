@@ -1537,6 +1537,16 @@ body {
     font-size: .8rem;
   }
 }
+/* CORRECTION — TITRE DE L'ACCUEIL */
+
+.legacy-home .legacy-intro h2 {
+  border-left: none !important;
+  border-bottom: none !important;
+  padding: 0 !important;
+  margin: 0 auto 20px !important;
+  background: none !important;
+}
+
 
 
 
