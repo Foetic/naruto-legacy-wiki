@@ -131,14 +131,17 @@ body {
    GRANDE BANNIÈRE
 ===================================================== */
 
-/* BANNIÈRE ORIGINALE — SANS RECADRAGE */
+/* BANNIÈRE — CONSERVATION INTÉGRALE DE L'IMAGE */
 
 .legacy-banner {
   position: relative;
-  overflow: hidden;
   width: 100%;
-  height: auto;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  overflow: visible !important;
   margin: 12px 0 24px;
+
   border: 1px solid rgba(144, 139, 255, 0.7);
   border-radius: 18px;
 
@@ -149,10 +152,12 @@ body {
 
 .legacy-banner img {
   display: block;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: unset !important;
   object-position: center;
+  border-radius: 17px;
 }
 
 /* =====================================================
