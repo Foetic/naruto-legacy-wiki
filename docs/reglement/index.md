@@ -33,13 +33,13 @@ Le respect de ces règles permet à chacun de profiter d'une expérience de jeu 
   <span class="rule-index-link">CONSULTER LES ARCHIVES →</span>
 </a>
 
-  <div class="rule-index-card rule-index-upcoming">
-    <span class="rule-index-number">04</span>
-    <span class="rule-index-kicker">CRÉATION & PROGRESSION</span>
-    <strong>Règlement Personnages</strong>
-    <small>La création, la gestion et l'évolution des personnages.</small>
-    <span class="rule-index-link">ARCHIVES À COMPLÉTER</span>
-  </div>
+<a class="rule-index-card" href="regles-personnages/">
+  <span class="rule-index-number">04</span>
+  <span class="rule-index-kicker">CRÉATION & PROGRESSION</span>
+  <strong>Règlement Personnages</strong>
+  <small>La création, la gestion et l'évolution des personnages.</small>
+  <span class="rule-index-link">CONSULTER LES ARCHIVES →</span>
+</a>
 
 </div>
 
