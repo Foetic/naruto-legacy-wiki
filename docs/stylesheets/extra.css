@@ -2020,6 +2020,59 @@ a.rule-index-card:hover {
   }
 }
 
+/* =====================================================
+   TECHNIQUES — GRIMOIRE SHINOBI
+   À ajouter à la fin de docs/stylesheets/extra.css
+===================================================== */
+
+.md-typeset h2.technique-section {
+  margin: 2.8rem 0 1.15rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid rgba(143, 130, 255, 0.38);
+  border-left: 4px solid #A58BFF;
+  border-radius: 10px;
+  background: linear-gradient(110deg, rgba(75, 69, 145, 0.22), rgba(16, 24, 49, 0.72));
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+}
+
+.md-typeset h3.technique-subsection {
+  margin: 2rem 0 0.9rem;
+  padding: 0.55rem 0.85rem;
+  border-bottom: 1px solid rgba(143, 130, 255, 0.35);
+  color: #C9BEFF;
+  background: rgba(16, 24, 49, 0.55);
+  border-radius: 7px 7px 0 0;
+}
+
+.md-typeset h3.technique-rank {
+  display: inline-block;
+  margin: 1.3rem 0 0.55rem;
+  padding: 0.22rem 0.75rem;
+  border: 1px solid rgba(145, 217, 255, 0.28);
+  border-radius: 999px;
+  background: rgba(42, 73, 111, 0.28);
+  color: #A9DFFF;
+  font-size: 0.82rem;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.md-typeset h2.technique-section + p,
+.md-typeset h3.technique-subsection + p {
+  color: #C5CBE4;
+}
+
+.md-typeset h2.technique-section { scroll-margin-top: 5rem; }
+.md-typeset h3.technique-subsection,
+.md-typeset h3.technique-rank { scroll-margin-top: 5rem; }
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-color: rgba(143, 130, 255, 0.38);
+  background: rgba(16, 24, 49, 0.72);
+}
+
+
 
 
 
