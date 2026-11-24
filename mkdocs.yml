@@ -44,11 +44,11 @@ markdown_extensions:
 
 nav:
   - Accueil: index.md
-  - Règlement:
-      - règlement/index.md
-      - Règles générales: règlement/regles-generales.md
-      - Règles RP: règlement/regles-rp.md
-      - Règles de combat: règlement/regles-combat.md
+    - Règlement:
+      - reglement/index.md
+      - Règles générales: reglement/regles-generales.md
+      - Règles RP: reglement/regles-rp.md
+      - Règles de combat: reglement/regles-combat.md
   - Lexique RP: lexique/index.md
   - Univers & Lore:
       - univers/index.md
