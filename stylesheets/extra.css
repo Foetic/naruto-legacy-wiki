@@ -1,0 +1,2082 @@
+
+/* =====================================================
+   NARUTO LEGACY
+   IDENTITÉ VISUELLE — DARK INDIGO / LAVANDE
+===================================================== */
+
+:root {
+  --nl-bg: #080C19;
+  --nl-card: #101831;
+  --nl-card-light: #171C39;
+  --nl-purple: #A58BFF;
+  --nl-blue: #829EFF;
+  --nl-ice: #91D9FF;
+  --nl-white: #F0F0FF;
+  --nl-muted: #BBC2DE;
+  --nl-border: rgba(143, 130, 255, 0.55);
+
+  --md-primary-fg-color: #343B70;
+  --md-primary-fg-color--light: #777DE0;
+  --md-primary-fg-color--dark: #171B31;
+  --md-accent-fg-color: #9297FF;
+}
+
+/* =====================================================
+   COULEURS ET TYPOGRAPHIE GÉNÉRALES
+===================================================== */
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: var(--nl-bg);
+  --md-default-bg-color--light: var(--nl-card);
+  --md-default-bg-color--lighter: #222844;
+
+  --md-default-fg-color: var(--nl-white);
+  --md-default-fg-color--light: #C5C9F5;
+
+  --md-typeset-color: var(--nl-white);
+  --md-typeset-a-color: var(--nl-purple);
+}
+
+body {
+  background: var(--nl-bg) !important;
+  font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+}
+
+.md-typeset {
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  color: var(--nl-white);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.md-typeset h1 {
+  font-size: 2.2rem;
+  border-bottom: 1px solid #343B70;
+  padding-bottom: 0.5rem;
+}
+
+.md-typeset h2 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+.md-typeset strong {
+  color: #A9AEFF;
+}
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.md-header,
+.md-tabs {
+  background: #090C18;
+}
+
+.md-header {
+  border-bottom: 1px solid #343B70;
+}
+
+.md-tabs__link--active,
+.md-nav__link--active {
+  color: var(--nl-purple) !important;
+}
+
+.md-nav__link:hover {
+  color: var(--nl-blue) !important;
+}
+
+.md-search__input {
+  background: #101831;
+  border-radius: 10px;
+}
+
+/* =====================================================
+   FOND ET CONTENU
+===================================================== */
+
+.md-main {
+  background:
+    radial-gradient(
+      ellipse at 50% 35%,
+      rgba(48, 52, 110, 0.16),
+      transparent 65%
+    ),
+    var(--nl-bg) !important;
+}
+
+.md-content {
+  max-width: 1250px;
+}
+
+.md-content__inner {
+  max-width: 1250px;
+}
+
+.legacy-home {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  color: var(--nl-white);
+}
+
+/* ==========================================
+   BANNIÈRE NARUTO LEGACY
+   IMAGE ORIGINALE — FORMAT NATUREL
+========================================== */
+
+.legacy-banner {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  overflow: hidden;
+
+  margin: 12px 0 24px;
+
+  border: 1px solid rgba(144, 139, 255, 0.7);
+  border-radius: 18px;
+
+  box-shadow:
+    0 0 25px rgba(105, 113, 255, 0.20),
+    inset 0 0 30px rgba(105, 113, 255, 0.10);
+}
+
+.legacy-banner img {
+  position: static !important;
+  display: block !important;
+
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  max-width: 100% !important;
+
+  object-fit: contain !important;
+  object-position: center;
+
+  transform: none !important;
+}
+
+
+/* =====================================================
+   INTRODUCTION
+===================================================== */
+
+.legacy-intro {
+  text-align: center;
+  margin: 28px auto 22px;
+  padding: 0 15px;
+}
+
+.legacy-intro h2 {
+  color: var(--nl-white);
+  font-family: Georgia, serif;
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
+  border: none;
+  margin: 0 0 8px;
+}
+
+.legacy-intro h2 span {
+  color: var(--nl-purple);
+}
+
+.legacy-intro p {
+  color: #C6CDE7;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.legacy-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  max-width: 620px;
+  margin: 20px auto;
+  color: var(--nl-purple);
+  font-size: 1.6rem;
+}
+
+.legacy-divider::before,
+.legacy-divider::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #8B82FF,
+    transparent
+  );
+}
+
+/* =====================================================
+   GRILLE ASYMÉTRIQUE
+===================================================== */
+
+.legacy-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 15px;
+  margin: 25px auto;
+}
+
+/* =====================================================
+   CARTES PRINCIPALES
+===================================================== */
+
+.legacy-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+
+  min-width: 0;
+  min-height: 170px;
+  padding: 22px 22px 22px 150px !important;
+
+  color: var(--nl-white) !important;
+  text-decoration: none !important;
+
+  background:
+    radial-gradient(
+      circle at 8% 50%,
+      rgba(117, 92, 221, 0.23),
+      transparent 30%
+    ),
+    linear-gradient(
+      120deg,
+      #171C39,
+      #0D152B 75%
+    ) !important;
+
+  border: 1px solid var(--nl-border);
+  border-radius: 17px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.25),
+    inset 0 0 20px rgba(106, 118, 230, 0.06);
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease;
+}
+
+/* =====================================================
+   DISPOSITION DES CARTES
+===================================================== */
+
+.legacy-wide {
+  grid-column: span 7;
+}
+
+.legacy-standard {
+  grid-column: span 5;
+}
+
+.legacy-small {
+  grid-column: span 3;
+  min-height: 160px;
+  padding-left: 105px !important;
+}
+
+/* =====================================================
+   NUMÉROTATION
+===================================================== */
+
+.legacy-number {
+  display: block;
+  color: var(--nl-purple);
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 3px;
+  letter-spacing: 0.04em;
+}
+
+/* =====================================================
+   ICÔNES
+===================================================== */
+
+.legacy-icon {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 95px;
+  height: 95px;
+
+  border-radius: 50%;
+  border: 2px solid rgba(160, 139, 255, 0.7);
+
+  background: rgba(91, 82, 170, 0.17);
+  color: #B9A6FF;
+
+  font-size: 2.8rem;
+  font-family: serif;
+
+  box-shadow:
+    0 0 18px rgba(130, 112, 255, 0.18),
+    inset 0 0 18px rgba(130, 112, 255, 0.13);
+
+  transition: all 0.35s ease;
+}
+
+.legacy-small .legacy-icon {
+  left: 15px;
+  width: 75px;
+  height: 75px;
+  font-size: 2.2rem;
+}
+
+/* =====================================================
+   TITRES ET DESCRIPTIONS
+===================================================== */
+
+.legacy-card strong {
+  display: block;
+  color: #F4F2FF;
+  font-family: Georgia, serif;
+  font-size: 1.35rem;
+  text-transform: uppercase;
+  margin: 0 0 4px;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+
+.legacy-card small {
+  display: block;
+  color: var(--nl-muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+/* =====================================================
+   LIENS DES CARTES
+===================================================== */
+
+.legacy-link {
+  display: block;
+  margin-top: 10px;
+  color: var(--nl-purple);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  transition: color 0.25s ease;
+}
+
+/* =====================================================
+   VARIATIONS DE COULEURS
+===================================================== */
+
+.legacy-card:nth-child(4n + 2) {
+  border-color: rgba(104, 179, 255, 0.7);
+}
+
+.legacy-card:nth-child(4n + 2) .legacy-icon {
+  color: var(--nl-ice);
+  border-color: rgba(104, 179, 255, 0.7);
+}
+
+.legacy-card:nth-child(4n + 3) {
+  border-color: rgba(165, 139, 255, 0.7);
+}
+
+/* =====================================================
+   ANIMATIONS AU SURVOL
+===================================================== */
+
+.legacy-card:hover {
+  transform: translateY(-6px);
+  border-color: #C1B0FF;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.4),
+    0 0 25px rgba(143, 119, 255, 0.24);
+
+  background:
+    radial-gradient(
+      circle at 10% 50%,
+      rgba(143, 115, 255, 0.34),
+      transparent 40%
+    ),
+    linear-gradient(
+      120deg,
+      #25234D,
+      #101A36
+    ) !important;
+}
+
+.legacy-card:hover .legacy-icon {
+  box-shadow:
+    0 0 30px rgba(158, 133, 255, 0.45);
+
+  transform: translateY(-50%) scale(1.07);
+}
+
+.legacy-card:hover .legacy-link {
+  color: #D0C2FF;
+}
+
+/* =====================================================
+   PIED DE PAGE
+===================================================== */
+
+.legacy-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  margin: 35px auto 20px;
+  padding: 20px 10px;
+
+  color: var(--nl-muted);
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+.legacy-footer > span:first-child {
+  color: var(--nl-purple);
+  font-size: 1.5rem;
+}
+
+.legacy-footer strong {
+  color: var(--nl-purple);
+  font-size: 1rem;
+}
+
+.legacy-footer-separator {
+  color: var(--nl-purple);
+}
+
+/* =====================================================
+   ENCARTS
+===================================================== */
+
+.home-note {
+  margin-top: 1.5rem;
+  padding: 1.2rem;
+  border-left: 3px solid #777DE0;
+  border-radius: 0 10px 10px 0;
+  background: var(--nl-card);
+}
+
+.home-note p {
+  color: #C5C9F5;
+}
+
+/* =====================================================
+   TABLEAUX
+===================================================== */
+
+.md-typeset table:not([class]) {
+  border: 1px solid #343B70;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+  background: #222844;
+  color: var(--nl-purple);
+}
+
+.md-typeset table:not([class]) td {
+  border-color: #343B70;
+}
+
+/* =====================================================
+   CITATIONS
+===================================================== */
+
+.md-typeset blockquote {
+  border-left-color: #777DE0;
+  background: var(--nl-card);
+}
+
+/* =====================================================
+   LIENS
+===================================================== */
+
+.md-typeset a:hover {
+  color: #B8BCFF;
+}
+
+/* =====================================================
+   RESPONSIVE — TABLETTES
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .legacy-wide,
+  .legacy-standard,
+  .legacy-small {
+    grid-column: span 6;
+  }
+
+  .legacy-card {
+    padding-left: 110px !important;
+  }
+
+  .legacy-icon {
+    left: 15px;
+    width: 75px;
+    height: 75px;
+  }
+
+  .legacy-small .legacy-icon {
+    left: 15px;
+  }
+}
+
+/* =====================================================
+   RESPONSIVE — MOBILES
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .legacy-banner {
+    height: auto !important;
+    border-radius: 12px;
+  }
+
+  .legacy-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .legacy-card,
+  .legacy-wide,
+  .legacy-standard,
+  .legacy-small {
+    grid-column: 1 / -1;
+    min-height: 135px;
+    padding: 18px 15px 18px 105px !important;
+  }
+
+  .legacy-icon,
+  .legacy-small .legacy-icon {
+    left: 15px;
+    width: 75px;
+    height: 75px;
+    font-size: 2.2rem;
+  }
+
+  .legacy-card strong {
+    font-size: 1.15rem;
+  }
+
+  .legacy-card small {
+    font-size: 0.82rem;
+  }
+
+  .legacy-intro {
+    margin-top: 20px;
+  }
+
+  .legacy-intro p {
+    font-size: 0.9rem;
+  }
+
+  .legacy-divider {
+    gap: 12px;
+  }
+
+  .md-typeset h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* =====================================================
+   ACCESSIBILITÉ — ANIMATIONS
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .legacy-card,
+  .legacy-icon,
+  .legacy-link {
+    transition: none !important;
+  }
+
+  .legacy-card:hover {
+    transform: none;
+  }
+}
+/* ==========================================
+   CORRECTION — LARGEUR DES CARTES
+========================================== */
+
+.legacy-small {
+  grid-column: span 6;
+  min-height: 155px;
+  padding-left: 115px !important;
+}
+
+.legacy-card {
+  padding-left: 125px !important;
+  min-width: 0;
+}
+
+.legacy-icon {
+  left: 20px;
+  width: 80px;
+  height: 80px;
+}
+
+.legacy-small .legacy-icon {
+  left: 15px;
+  width: 75px;
+  height: 75px;
+}
+
+.legacy-card strong {
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .legacy-small {
+    grid-column: 1 / -1;
+  }
+}
+/* ==========================================
+   NARUTO LEGACY — PLEINE LARGEUR
+========================================== */
+
+/* Libérer la largeur générale */
+.md-grid {
+  max-width: 100% !important;
+}
+
+.md-content {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+.md-content__inner {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* Libérer notre page d'accueil */
+.legacy-home {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 auto !important;
+}
+
+/* Grille sur toute la largeur */
+.legacy-grid {
+  width: 100% !important;
+  max-width: none !important;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+/* Éviter les débordements */
+.legacy-card {
+  min-width: 0;
+  box-sizing: border-box;
+}
+/* ==========================================
+   NARUTO LEGACY — FINITION DES CARTES
+   DARK AKATSUKI — VERSION MAQUETTE
+========================================== */
+
+/* STRUCTURE */
+.legacy-grid {
+  width: 100% !important;
+  gap: 18px !important;
+  margin: 32px auto !important;
+  align-items: stretch;
+}
+
+/* CARTES */
+.legacy-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  min-height: 205px !important;
+  padding: 25px 28px 25px 150px !important;
+
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+
+  border-radius: 20px !important;
+  border: 1px solid rgba(165, 139, 255, .65) !important;
+
+  background:
+    radial-gradient(
+      circle at 12% 50%,
+      rgba(165, 139, 255, .20),
+      transparent 38%
+    ),
+    linear-gradient(
+      135deg,
+      #1B2142,
+      #101831 75%
+    ) !important;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, .25),
+    inset 0 0 25px rgba(130, 158, 255, .05);
+
+  transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease,
+    background .35s ease !important;
+}
+
+/* HALO DÉCORATIF */
+.legacy-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      circle at 8% 50%,
+      rgba(165, 139, 255, .13),
+      transparent 45%
+    );
+
+  opacity: .8;
+}
+
+/* FORMATS ASYMÉTRIQUES */
+.legacy-wide {
+  grid-column: span 7;
+}
+
+.legacy-standard {
+  grid-column: span 5;
+}
+
+.legacy-small {
+  grid-column: span 3;
+  min-height: 180px !important;
+  padding-left: 115px !important;
+}
+
+/* NUMÉROS */
+.legacy-number {
+  color: #A58BFF !important;
+  font-size: 1.45rem !important;
+  font-weight: 900 !important;
+  letter-spacing: .04em;
+  margin-bottom: 7px !important;
+}
+
+/* ICÔNES */
+.legacy-icon {
+  left: 25px !important;
+  width: 96px !important;
+  height: 96px !important;
+
+  border: 2px solid rgba(165, 139, 255, .85) !important;
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(165, 139, 255, .22),
+      rgba(91, 82, 170, .08)
+    ) !important;
+
+  color: #BDAAFF !important;
+  font-size: 2.9rem !important;
+
+  box-shadow:
+    0 0 15px rgba(165, 139, 255, .25),
+    inset 0 0 18px rgba(165, 139, 255, .15);
+
+  transition: all .35s ease !important;
+}
+
+.legacy-small .legacy-icon {
+  left: 18px !important;
+  width: 78px !important;
+  height: 78px !important;
+  font-size: 2.3rem !important;
+}
+
+/* TITRES */
+.legacy-card strong {
+  color: #F4F2FF !important;
+  font-family: Georgia, serif !important;
+  font-size: clamp(1.15rem, 1.5vw, 1.55rem) !important;
+  font-weight: 800 !important;
+  letter-spacing: .025em;
+  line-height: 1.35;
+  margin-bottom: 7px !important;
+}
+
+/* DESCRIPTIONS */
+.legacy-card small {
+  color: #BBC2DE !important;
+  font-size: .92rem !important;
+  line-height: 1.6 !important;
+}
+
+/* LIENS */
+.legacy-link {
+  color: #A58BFF !important;
+  font-size: .85rem !important;
+  font-weight: 900 !important;
+  letter-spacing: .045em;
+  margin-top: 12px !important;
+  transition: color .3s ease;
+}
+
+/* ALTERNANCE DES COULEURS */
+.legacy-card:nth-child(even) {
+  border-color: rgba(104, 179, 255, .75) !important;
+}
+
+.legacy-card:nth-child(even) .legacy-icon {
+  color: #91D9FF !important;
+  border-color: rgba(104, 179, 255, .9) !important;
+  box-shadow: 0 0 18px rgba(104, 179, 255, .22);
+}
+
+/* ANIMATION AU SURVOL */
+.legacy-card:hover {
+  transform: translateY(-7px) !important;
+  border-color: #C6B5FF !important;
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, .4),
+    0 0 28px rgba(165, 139, 255, .25),
+    inset 0 0 25px rgba(165, 139, 255, .10) !important;
+}
+
+.legacy-card:hover .legacy-icon {
+  transform: translateY(-50%) scale(1.09) !important;
+  box-shadow:
+    0 0 30px rgba(165, 139, 255, .48),
+    inset 0 0 20px rgba(165, 139, 255, .2);
+}
+
+.legacy-card:hover .legacy-link {
+  color: #D6C9FF !important;
+}
+
+/* TABLETTES */
+@media (max-width: 900px) {
+  .legacy-wide,
+  .legacy-standard,
+  .legacy-small {
+    grid-column: span 6;
+  }
+}
+
+/* MOBILES */
+@media (max-width: 600px) {
+  .legacy-grid {
+    grid-template-columns: 1fr !important;
+    gap: 13px !important;
+  }
+
+  .legacy-card,
+  .legacy-wide,
+  .legacy-standard,
+  .legacy-small {
+    grid-column: 1 / -1 !important;
+    min-height: 155px !important;
+    padding: 20px 15px 20px 105px !important;
+  }
+
+  .legacy-icon,
+  .legacy-small .legacy-icon {
+    left: 14px !important;
+    width: 72px !important;
+    height: 72px !important;
+    font-size: 2.1rem !important;
+  }
+}
+/* ==========================================
+   CARTES — EFFETS PREMIUM NARUTO LEGACY
+========================================== */
+
+/* Lumière décorative */
+.legacy-card::after {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(165, 139, 255, .10),
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: -1;
+  transition: all .45s ease;
+}
+
+/* Profondeur au repos */
+.legacy-card {
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, .28),
+    inset 0 1px 0 rgba(255, 255, 255, .045),
+    inset 0 -15px 30px rgba(0, 0, 0, .10) !important;
+}
+
+/* Icônes plus lumineuses */
+.legacy-icon {
+  text-shadow: 0 0 14px currentColor;
+  box-shadow:
+    0 0 20px rgba(165, 139, 255, .24),
+    inset 0 0 20px rgba(165, 139, 255, .16) !important;
+}
+
+/* Animation au survol */
+.legacy-card:hover::after {
+  transform: scale(1.7);
+  opacity: 1;
+}
+
+.legacy-card:hover {
+  transform: translateY(-8px) scale(1.012) !important;
+}
+
+/* Titres plus élégants */
+.legacy-card strong {
+  text-shadow: 0 2px 12px rgba(165, 139, 255, .12);
+}
+
+/* Liens animés */
+.legacy-link {
+  transition: all .3s ease !important;
+}
+
+.legacy-card:hover .legacy-link {
+  letter-spacing: .08em;
+  text-shadow: 0 0 12px rgba(165, 139, 255, .45);
+}
+
+/* Réduire les animations si nécessaire */
+@media (prefers-reduced-motion: reduce) {
+  .legacy-card,
+  .legacy-icon,
+  .legacy-card::after,
+  .legacy-link {
+    transition: none !important;
+  }
+}
+
+/* ==========================================
+   BANNIÈRE — PANORAMIQUE NARUTO LEGACY
+========================================== */
+
+.legacy-banner {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 410px !important;
+  min-height: 0 !important;
+  max-height: none !important;
+
+  overflow: hidden;
+  margin: 18px 0 30px !important;
+
+  border: 1px solid rgba(144, 139, 255, 0.7);
+  border-radius: 18px;
+
+  box-shadow:
+    0 0 25px rgba(105, 113, 255, 0.20),
+    inset 0 0 30px rgba(105, 113, 255, 0.10);
+}
+
+.legacy-banner img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+
+  max-width: none !important;
+  max-height: none !important;
+
+  object-fit: cover !important;
+  object-position: center center !important;
+
+  transform: none !important;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .legacy-banner {
+    height: 190px !important;
+    border-radius: 12px;
+  }
+}
+/* ==========================================
+   INTRODUCTION — NARUTO LEGACY
+========================================== */
+
+.legacy-intro {
+  width: 100%;
+  max-width: 1100px;
+  margin: 32px auto 38px !important;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.legacy-intro h2 {
+  max-width: 1050px;
+  margin: 0 auto 16px !important;
+
+  color: #F0F0FF;
+  font-family: Georgia, serif;
+  font-size: clamp(1.8rem, 3vw, 2.45rem) !important;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+}
+
+.legacy-intro h2 span {
+  color: #A58BFF;
+  text-shadow: 0 0 18px rgba(165, 139, 255, 0.15);
+}
+
+.legacy-intro p {
+  max-width: 900px;
+  margin: 0 auto !important;
+
+  color: #BBC2DE;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.legacy-divider {
+  max-width: 650px;
+  margin: 28px auto 0 !important;
+  gap: 25px;
+  color: #A58BFF;
+  font-size: 1.7rem;
+}
+
+.legacy-divider span {
+  display: inline-block;
+  text-shadow: 0 0 15px rgba(165, 139, 255, 0.6);
+}
+
+/* INTRODUCTION MOBILE */
+
+@media (max-width: 600px) {
+  .legacy-intro {
+    margin: 25px auto 28px !important;
+    padding: 0 12px;
+  }
+
+  .legacy-intro h2 {
+    font-size: 1.65rem !important;
+  }
+
+  .legacy-intro p {
+    font-size: 0.92rem;
+  }
+
+  .legacy-divider {
+    margin-top: 20px !important;
+  }
+}
+
+/* ==========================================
+   CORRECTION — CARTES DE NAVIGATION
+========================================== */
+
+/* TITRES DES PETITES CARTES */
+
+.legacy-small strong {
+  font-size: 1rem !important;
+  line-height: 1.35 !important;
+  white-space: nowrap !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  letter-spacing: -0.025em;
+}
+
+/* DESCRIPTIONS */
+
+.legacy-small small {
+  font-size: 0.8rem !important;
+  line-height: 1.5 !important;
+}
+
+/* LIENS */
+
+.legacy-small .legacy-link {
+  font-size: 0.68rem !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0 !important;
+}
+
+/* ESPACEMENT */
+
+.legacy-small {
+  min-width: 0;
+}
+
+.legacy-small > * {
+  min-width: 0;
+}
+
+/* TITRE D'ACCUEIL */
+
+.legacy-intro h2 {
+  max-width: 1400px !important;
+  font-size: clamp(1.8rem, 2.3vw, 2.2rem) !important;
+  line-height: 1.3 !important;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .legacy-small strong {
+    font-size: 1.1rem !important;
+  }
+
+  .legacy-small .legacy-link {
+    font-size: 0.8rem !important;
+  }
+}
+/* ==========================================
+   NARUTO LEGACY — PREMIUM HOVER EFFECTS
+========================================== */
+
+/* LIENS DES PETITES CARTES */
+
+.legacy-small .legacy-link {
+  font-size: 0 !important;
+  white-space: nowrap;
+}
+
+.legacy-small .legacy-link::after {
+  content: "EXPLORER →";
+  font-size: 0.72rem;
+}
+
+/* TRANSITIONS */
+
+.legacy-card {
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease !important;
+}
+
+/* EFFET AU SURVOL */
+
+.legacy-card:hover {
+  transform: translateY(-5px) !important;
+
+  border-color: #B9A5FF !important;
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.35),
+    0 0 22px rgba(143, 119, 255, 0.25),
+    inset 0 0 25px rgba(143, 119, 255, 0.08) !important;
+}
+
+/* ICÔNES */
+
+.legacy-icon {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease !important;
+}
+
+.legacy-card:hover .legacy-icon {
+  transform: translateY(-50%) scale(1.08) !important;
+
+  box-shadow:
+    0 0 28px rgba(165, 139, 255, 0.4),
+    inset 0 0 20px rgba(165, 139, 255, 0.2) !important;
+
+  background: rgba(119, 105, 220, 0.25);
+}
+
+/* LIENS */
+
+.legacy-card .legacy-link {
+  transition: color 0.3s ease;
+}
+
+.legacy-card:hover .legacy-link {
+  color: #D5C8FF !important;
+}
+
+/* ACCESSIBILITÉ */
+
+@media (prefers-reduced-motion: reduce) {
+  .legacy-card,
+  .legacy-icon,
+  .legacy-link {
+    transition: none !important;
+  }
+
+  .legacy-card:hover {
+    transform: none !important;
+  }
+}
+/* ==========================================
+   NARUTO LEGACY — PAGES INTÉRIEURES
+========================================== */
+
+/* TITRES PRINCIPAUX */
+
+.md-typeset h1 {
+  font-family: Georgia, serif !important;
+  font-size: 2.5rem !important;
+  letter-spacing: 0.015em;
+  padding-bottom: 18px !important;
+  border-bottom: 1px solid rgba(143, 130, 255, .5) !important;
+
+  background: linear-gradient(
+    90deg,
+    #F0F0FF,
+    #B9A0FF
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SOUS-TITRES */
+
+.md-typeset h2 {
+  font-family: Georgia, serif;
+  font-size: 1.65rem;
+  margin-top: 2.5rem !important;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(143, 130, 255, .3);
+}
+
+.md-typeset h3 {
+  color: #B9A6FF !important;
+  font-size: 1.2rem;
+  margin-top: 1.8rem;
+}
+
+/* PARAGRAPHES */
+
+.md-typeset p {
+  line-height: 1.85;
+  color: #D0D4EF;
+}
+
+/* ENCARTS */
+
+.md-typeset .admonition {
+  background: #111831 !important;
+  border: 1px solid rgba(143, 130, 255, .55) !important;
+  border-left: 4px solid #9297FF !important;
+  border-radius: 12px !important;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, .2);
+  overflow: hidden;
+}
+
+/* EN-TÊTES DES ENCARTS */
+
+.md-typeset .admonition-title {
+  background: rgba(119, 125, 224, .17) !important;
+  color: #C2B0FF !important;
+  font-weight: 800;
+}
+
+/* CONTENU DES ENCARTS */
+
+.md-typeset .admonition p {
+  color: #D8DAF5;
+}
+
+/* CITATIONS */
+
+.md-typeset blockquote {
+  border-left: 3px solid #9297FF !important;
+  background: #111831;
+  border-radius: 0 10px 10px 0;
+  padding: 12px 20px;
+}
+
+/* LIENS */
+
+.md-typeset a {
+  color: #A99AFF;
+  transition: color .2s ease;
+}
+
+.md-typeset a:hover {
+  color: #C9BCFF;
+}
+
+/* LISTES */
+
+.md-typeset li {
+  margin-bottom: .45rem;
+}
+
+/* TABLEAUX */
+
+.md-typeset table:not([class]) {
+  border: 1px solid #343B70;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+  background: #222844 !important;
+  color: #B9A6FF !important;
+}
+
+.md-typeset table:not([class]) td {
+  background: #101831;
+  border-color: #343B70;
+}
+/* Masquer le symbole d'ancrage des titres */
+
+.md-typeset .headerlink {
+  display: none !important;
+}
+
+/* ==========================================
+   NARUTO LEGACY — GRIMOIRE NINJA ANCESTRAL
+   Identité visuelle des pages intérieures
+========================================== */
+
+:root {
+  --nl-ink: #090d1c;
+  --nl-parchment: #c8c0e8;
+  --nl-lavender: #a58aff;
+  --nl-violet: #7662c9;
+  --nl-cyan: #65c9f5;
+  --nl-border: rgba(165, 138, 255, .38);
+}
+
+/* TITRES — ARCHIVES ANCESTRALES */
+
+.md-typeset h1 {
+  color: #eeeaff;
+  font-family: Georgia, serif;
+  letter-spacing: .5px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--nl-border);
+}
+
+.md-typeset h2 {
+  color: #c4adff;
+  font-family: Georgia, serif;
+  padding: 12px 0 10px 16px;
+  border-left: 3px solid var(--nl-lavender);
+  border-bottom: 1px solid rgba(165, 138, 255, .18);
+  margin-top: 38px;
+}
+
+.md-typeset h3 {
+  color: #8dcfff;
+  font-family: Georgia, serif;
+  letter-spacing: .3px;
+  margin-top: 28px;
+}
+
+/* ROULEAUX — ENCARTS D'INFORMATION */
+
+.md-typeset .admonition {
+  background: linear-gradient(
+    135deg,
+    rgba(105, 84, 174, .20),
+    rgba(15, 23, 49, .92)
+  );
+  border: 1px solid var(--nl-border);
+  border-left: 4px solid var(--nl-lavender);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, .18);
+}
+
+.md-typeset .admonition-title {
+  background: rgba(126, 101, 205, .19);
+  color: #d0bdff;
+  font-family: Georgia, serif;
+  letter-spacing: .4px;
+}
+
+/* DOSSIERS ANBU */
+
+.md-typeset .admonition.danger {
+  background: linear-gradient(
+    135deg,
+    rgba(40, 24, 47, .95),
+    rgba(10, 12, 25, .98)
+  );
+  border-color: rgba(190, 105, 145, .55);
+  border-left-color: #bd658e;
+}
+
+.md-typeset .admonition.danger .admonition-title {
+  background: rgba(155, 65, 110, .18);
+  color: #e5a3c4;
+}
+
+/* TABLEAUX — REGISTRES SHINOBI */
+
+.md-typeset table:not([class]) {
+  display: table;
+  width: 100%;
+  border: 1px solid var(--nl-border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(16, 23, 48, .65);
+}
+
+.md-typeset table:not([class]) th {
+  background: rgba(112, 91, 190, .30);
+  color: #d2bdff;
+  font-family: Georgia, serif;
+  border-bottom: 1px solid var(--nl-border);
+}
+
+.md-typeset table:not([class]) td {
+  border-bottom: 1px solid rgba(165, 138, 255, .13);
+}
+
+.md-typeset table:not([class]) tr:hover td {
+  background: rgba(130, 105, 215, .09);
+}
+
+/* PARCHEMINS — CITATIONS ET EXTRAITS */
+
+.md-typeset blockquote {
+  background: linear-gradient(
+    110deg,
+    rgba(115, 94, 177, .16),
+    rgba(15, 20, 42, .55)
+  );
+  border-left: 3px solid var(--nl-lavender);
+  border-radius: 0 10px 10px 0;
+  padding: 14px 20px;
+  color: #c5c4df;
+}
+
+/* SÉPARATEURS */
+
+.md-typeset hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(165, 138, 255, .65),
+    transparent
+  );
+  margin: 36px 0;
+}
+
+/* BLOCS DE CODE — ARCHIVES TECHNIQUES */
+
+.md-typeset pre {
+  border: 1px solid rgba(105, 201, 245, .28);
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .18);
+}
+
+/* LIENS */
+
+.md-typeset a {
+  transition: color .2s ease;
+}
+
+.md-typeset a:hover {
+  color: #b9a0ff;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .md-typeset h1 {
+    font-size: 1.8rem;
+  }
+
+  .md-typeset h2 {
+    font-size: 1.35rem;
+  }
+
+  .md-typeset table:not([class]) {
+    font-size: .8rem;
+  }
+}
+/* CORRECTION — TITRE DE L'ACCUEIL */
+
+.legacy-home .legacy-intro h2 {
+  border-left: none !important;
+  border-bottom: none !important;
+  padding: 0 !important;
+  margin: 0 auto 20px !important;
+  background: none !important;
+}
+/* =====================================
+   NARUTO LEGACY — ARCHIVES DES VILLAGES
+===================================== */
+
+.village-archive {
+  margin: 35px 0;
+}
+
+.village-heading {
+  text-align: center;
+  padding: 35px 20px 45px;
+  margin-bottom: 35px;
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(105, 83, 180, .19),
+      transparent 72%
+    );
+  border-bottom: 1px solid rgba(165, 138, 255, .25);
+}
+
+.village-eyebrow {
+  color: #8bceff;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.village-heading h2 {
+  border: none !important;
+  padding: 15px 0 !important;
+  color: #c2a5ff;
+  font-family: Georgia, serif;
+  font-size: 2.2rem;
+}
+
+.village-heading p {
+  max-width: 650px;
+  margin: auto;
+  color: #aeb5d0;
+  line-height: 1.9;
+}
+
+.village-divider {
+  color: #a78aff;
+  font-size: 1.7rem;
+  margin-top: 25px;
+}
+
+.village-section-title {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 40px 0 25px;
+}
+
+.village-section-title > span {
+  color: #a78aff;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.village-section-title h3 {
+  margin: 0 !important;
+  color: #eeeaff;
+  font-family: Georgia, serif;
+}
+
+.village-section-title p {
+  margin: 5px 0 0;
+  color: #929bb9;
+}
+
+.village-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.village-card {
+  position: relative;
+  overflow: hidden;
+  padding: 28px;
+  min-height: 210px;
+  border: 1px solid rgba(144, 139, 255, .48);
+  border-radius: 15px;
+  background:
+    radial-gradient(
+      circle at 0% 100%,
+      rgba(116, 91, 199, .24),
+      transparent 65%
+    ),
+    linear-gradient(135deg, #171e3a, #0d1429);
+  transition: transform .25s ease, border-color .25s ease,
+              box-shadow .25s ease;
+}
+
+.village-card:nth-child(even) {
+  border-color: rgba(90, 177, 255, .48);
+}
+
+.village-card:hover {
+  transform: translateY(-5px);
+  border-color: #a78aff;
+  box-shadow: 0 10px 30px rgba(111, 87, 210, .18);
+}
+
+.village-card-symbol {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 18px;
+  border: 1px solid #a78aff;
+  border-radius: 50%;
+  color: #bca4ff;
+  font-size: 2rem;
+  background: rgba(139, 111, 226, .12);
+}
+
+.village-card:nth-child(even) .village-card-symbol {
+  color: #78d3ff;
+  border-color: #65baff;
+}
+
+.village-status {
+  display: block;
+  color: #a78aff;
+  font-size: .65rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.village-card h3 {
+  color: #f0edff !important;
+  font-family: Georgia, serif;
+  margin: 0 0 10px !important;
+}
+
+.village-card p {
+  color: #9ca6c4;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.village-notice {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 35px;
+  padding: 22px;
+  border: 1px solid rgba(165, 138, 255, .3);
+  border-left: 4px solid #a78aff;
+  border-radius: 10px;
+  background: rgba(112, 91, 190, .12);
+}
+
+.village-notice > span {
+  font-size: 2rem;
+  color: #b99aff;
+}
+
+.village-notice strong {
+  color: #d0bdff;
+}
+
+.village-notice p {
+  color: #aab2ce;
+  margin: 5px 0 0;
+}
+
+@media (max-width: 650px) {
+  .village-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .village-heading h2 {
+    font-size: 1.7rem;
+  }
+
+  .village-card {
+    min-height: auto;
+  }
+}
+/* KONOHA — CARTE PRINCIPALE */
+
+.village-grid-single {
+  grid-template-columns: minmax(0, 850px) !important;
+  justify-content: center;
+}
+
+.village-konoha {
+  min-height: 280px;
+  padding: 38px;
+  background:
+    radial-gradient(
+      circle at 5% 50%,
+      rgba(139, 111, 226, .30),
+      transparent 55%
+    ),
+    linear-gradient(120deg, #1a2141, #0d1429);
+}
+
+.village-konoha .village-card-symbol {
+  width: 76px;
+  height: 76px;
+  font-size: 2.8rem;
+  margin-bottom: 22px;
+  box-shadow: 0 0 22px rgba(165, 138, 255, .18);
+}
+
+.village-card-footer {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(165, 138, 255, .25);
+  color: #a78aff;
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}a.village-konoha {
+  display: block;
+  color: inherit !important;
+  text-decoration: none !important;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+a.village-konoha:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 35px rgba(155, 125, 255, .28);
+}
+/* =====================================
+   ARCHIVES DE KONOHA
+===================================== */
+
+.konoha-archive {
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+.konoha-hero {
+  position: relative;
+  text-align: center;
+  padding: 65px 25px;
+  margin-bottom: 55px;
+  overflow: hidden;
+  border: 1px solid rgba(157, 133, 255, .45);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at center,
+      rgba(130, 100, 210, .23),
+      transparent 65%),
+    linear-gradient(145deg, #171d39, #090d1d);
+  box-shadow: 0 0 35px rgba(105, 113, 255, .12);
+}
+
+.konoha-eyebrow,
+.konoha-label {
+  color: #a78aff;
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.konoha-emblem {
+  width: 105px;
+  height: 105px;
+  margin: 25px auto;
+  display: grid;
+  place-items: center;
+  border: 2px solid #a78aff;
+  border-radius: 50%;
+  color: #bda5ff;
+  font-size: 4rem;
+  box-shadow: 0 0 25px rgba(167, 138, 255, .2);
+}
+
+.konoha-hero h2 {
+  color: #c3a5ff;
+  font-size: 3rem;
+  margin: 15px 0 5px;
+}
+
+.konoha-subtitle {
+  color: #c1c7e3;
+  font-size: 1.15rem;
+}
+
+.konoha-seal {
+  margin-top: 30px;
+  color: #a78aff;
+  font-size: .7rem;
+  letter-spacing: 3px;
+}
+
+.konoha-introduction {
+  margin: 45px 0 30px;
+  padding-left: 22px;
+  border-left: 3px solid #a78aff;
+}
+
+.konoha-introduction h3 {
+  color: #c3a5ff;
+  font-size: 1.8rem;
+}
+
+.konoha-sections {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  margin-bottom: 60px;
+}
+
+.konoha-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 23px;
+  border: 1px solid rgba(145, 130, 235, .4);
+  border-radius: 12px;
+  background: linear-gradient(120deg, #202449, #11182e);
+  text-decoration: none !important;
+  color: #f0edff !important;
+  transition: .25s ease;
+}
+
+.konoha-section:hover {
+  transform: translateY(-4px);
+  border-color: #a78aff;
+  box-shadow: 0 0 22px rgba(167, 138, 255, .15);
+}
+
+.konoha-section > span {
+  color: #a78aff;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.konoha-section h3 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+}
+
+.konoha-section p {
+  margin: 0;
+  color: #9da7c5;
+  font-size: .85rem;
+}
+
+.konoha-section b {
+  margin-left: auto;
+  color: #a78aff;
+}
+
+.konoha-records section {
+  margin: 35px 0;
+  scroll-margin-top: 100px;
+}
+
+.konoha-records h3 {
+  color: #c3a5ff;
+  font-size: 1.45rem;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(145, 130, 235, .35);
+}
+
+.konoha-placeholder {
+  padding: 25px;
+  border: 1px solid rgba(145, 130, 235, .3);
+  border-left: 3px solid #a78aff;
+  border-radius: 10px;
+  background: rgba(24, 31, 59, .8);
+  color: #a5aecb;
+}
+
+@media (max-width: 650px) {
+  .konoha-sections {
+    grid-template-columns: 1fr;
+  }
+
+  .konoha-hero h2 {
+    font-size: 2.1rem;
+  }
+}
+/* ==========================================
+   NARUTO LEGACY — INDEX DU RÈGLEMENT
+========================================== */
+
+.rule-eyebrow {
+  display: block;
+  margin: 0 0 12px;
+  color: #9e8bff;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .2em;
+}
+
+.rule-index {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 32px 0;
+}
+
+.rule-index-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 220px;
+  padding: 24px;
+  color: #f0edff !important;
+  text-decoration: none !important;
+  border: 1px solid rgba(165, 138, 255, .42);
+  border-radius: 14px;
+  background:
+    radial-gradient(circle at 0% 100%, rgba(116, 91, 199, .2), transparent 60%),
+    linear-gradient(135deg, #171e3a, #0d1429);
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+
+a.rule-index-card:hover {
+  transform: translateY(-4px);
+  border-color: #b9a5ff;
+  box-shadow: 0 10px 28px rgba(111, 87, 210, .2);
+}
+
+.rule-index-number {
+  color: #a78aff;
+  font-size: 1.65rem;
+  font-weight: 800;
+}
+
+.rule-index-kicker {
+  margin: 10px 0 7px;
+  color: #91cfff;
+  font-size: .66rem;
+  font-weight: 800;
+  letter-spacing: .13em;
+}
+
+.rule-index-card strong {
+  color: #f0edff;
+  font-family: Georgia, serif;
+  font-size: 1.35rem;
+}
+
+.rule-index-card small {
+  margin-top: 9px;
+  color: #b9c1dc;
+  font-size: .86rem;
+  line-height: 1.6;
+}
+
+.rule-index-link {
+  margin-top: auto;
+  padding-top: 22px;
+  color: #b9a0ff;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+
+.rule-index-upcoming {
+  opacity: .68;
+  border-style: dashed;
+}
+
+@media (max-width: 650px) {
+  .rule-index {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =====================================================
+   TECHNIQUES — GRIMOIRE SHINOBI
+   À ajouter à la fin de docs/stylesheets/extra.css
+===================================================== */
+
+.md-typeset h2.technique-section {
+  margin: 2.8rem 0 1.15rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid rgba(143, 130, 255, 0.38);
+  border-left: 4px solid #A58BFF;
+  border-radius: 10px;
+  background: linear-gradient(110deg, rgba(75, 69, 145, 0.22), rgba(16, 24, 49, 0.72));
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+}
+
+.md-typeset h3.technique-subsection {
+  margin: 2rem 0 0.9rem;
+  padding: 0.55rem 0.85rem;
+  border-bottom: 1px solid rgba(143, 130, 255, 0.35);
+  color: #C9BEFF;
+  background: rgba(16, 24, 49, 0.55);
+  border-radius: 7px 7px 0 0;
+}
+
+.md-typeset h3.technique-rank {
+  display: inline-block;
+  margin: 1.3rem 0 0.55rem;
+  padding: 0.22rem 0.75rem;
+  border: 1px solid rgba(145, 217, 255, 0.28);
+  border-radius: 999px;
+  background: rgba(42, 73, 111, 0.28);
+  color: #A9DFFF;
+  font-size: 0.82rem;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.md-typeset h2.technique-section + p,
+.md-typeset h3.technique-subsection + p {
+  color: #C5CBE4;
+}
+
+.md-typeset h2.technique-section { scroll-margin-top: 5rem; }
+.md-typeset h3.technique-subsection,
+.md-typeset h3.technique-rank { scroll-margin-top: 5rem; }
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-color: rgba(143, 130, 255, 0.38);
+  background: rgba(16, 24, 49, 0.72);
+}
+
+
+
+
+
+
+
+
+
