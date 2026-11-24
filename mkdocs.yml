@@ -1,3 +1,4 @@
+
 site_name: RP Narratif Naruto Legacy
 site_description: Encyclopédie du monde ninja — lore, règlement et ressources du serveur RP Naruto Legacy.
 site_url: https://foetic.github.io/naruto-legacy-wiki/
@@ -55,7 +56,12 @@ nav:
   - Villages: villages/index.md
   - Clans: clans/index.md
   - Système de combat:
-      - Techniques: combat/techniques.md
+      - Techniques:
+          - combat/techniques.md
+          - Règles d'acquisition: combat/techniques/regles-acquisition/index.md
+          - Spécialisations: combat/techniques/specialisations/index.md
+          - Natures élémentaires: combat/techniques/natures-elementaires/index.md
+          - Kekkei Genkai: combat/techniques/kekkei-genkai/index.md
       - Passifs: combat/passifs.md
       - Affinités: combat/affinites.md
-  - Archives: archives/index.md  
+  - Archives: archives/index.md
