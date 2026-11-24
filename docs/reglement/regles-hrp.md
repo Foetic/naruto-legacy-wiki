@@ -35,7 +35,7 @@ Afin de garantir une expérience agréable à tous, quelques règles de vie en c
 ## 04 — Respect du staff
 
 - Les décisions du staff doivent être respectées.
-- Si vous estimez qu'une décision est injuste, vous pouvez demander des explications en privé, dans le calme et avec des arguments.
+- Si vous estimez qu'une décision est injuste, vous devez ouvrir un ticket, dans le calme et avec des arguments.
 - Contester une décision est possible ; manquer de respect au staff, provoquer publiquement ou chercher à mobiliser les membres contre lui ne l'est pas.
 - Le staff est là pour encadrer la communauté, pas pour subir des pressions ou des attaques personnelles.
 - Aucun membre ne bénéficie d'un traitement de faveur en raison de son ancienneté ou de ses relations avec le staff.
