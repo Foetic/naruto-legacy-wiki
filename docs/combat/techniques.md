@@ -1,3 +1,4 @@
+
 # Techniques
 
 <span class="rule-eyebrow">NARUTO LEGACY · RÉPERTOIRE DES ARTS SHINOBI</span>
