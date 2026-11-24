@@ -1,0 +1,2 @@
+- Techniques & Capacités:
+    - Présentation: techniques/index.md
