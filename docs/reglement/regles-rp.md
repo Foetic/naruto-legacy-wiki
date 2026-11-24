@@ -25,17 +25,17 @@ Le métagaming consiste à utiliser des informations obtenues HRP par son person
 - Les secrets, identités, capacités ou projets d'un personnage doivent être découverts par des moyens RP.
 - Il est interdit d'utiliser les connaissances du joueur pour prendre des décisions que son personnage ne pourrait normalement pas prendre.
 
-## 03 — Powergaming et Godmodding
+## 03 — PowerRP et WinRP
 
 Ces pratiques nuisent à l'équilibre du jeu et sont interdites.
 
-**Powergaming :**
+**PowerRP :**
 
 - Imposer des actions irréalisables ou exagérées à son personnage.
 - Exploiter les limites du système de jeu pour obtenir un avantage injustifié.
 - Enchaîner des actions sans laisser de possibilité de réaction à l'adversaire.
 
-**Godmodding :**
+**WinRP :**
 
 - Déclarer automatiquement qu'une attaque touche sa cible sans lui laisser la possibilité de réagir.
 - Décider qu'une technique fonctionne systématiquement, quelles que soient les circonstances.
@@ -76,8 +76,8 @@ La puissance d'un personnage ne lui donne pas le droit d'ignorer les règles du 
 
 Certaines actions peuvent modifier durablement l'histoire et nécessitent une attention particulière.
 
-- Les assassinats de personnages joueurs, les captures, les mutilations importantes et les événements irréversibles doivent respecter les règles du serveur.
-- Il est interdit de décider seul de la mort ou du sort définitif du personnage d'un autre joueur.
+- Les assassinats de personnages joueurs, les captures, et les événements irréversibles doivent respecter les règles du serveur.
+- Il est interdit de décider seul de la mort ou du sort définitif du personnage d'un autre joueur. Pour infliger une mort RP, il est nécessaire d'ouvrir un ticket RPK.
 - Les attaques contre les villages, les destructions majeures et les changements politiques importants doivent être encadrés par le staff.
 - Une action importante ne doit jamais être imposée à une communauté entière sans cadre narratif ou validation appropriée.
 
@@ -86,7 +86,7 @@ Certaines actions peuvent modifier durablement l'histoire et nécessitent une at
 - Les joueurs doivent respecter l'ordre de réponse convenu entre les participants.
 - Évitez les doubles actions qui empêchent les autres joueurs de réagir.
 - Les scènes doivent rester cohérentes dans leur chronologie et leur localisation.
-- Il est interdit de participer simultanément à plusieurs scènes incompatibles dans le temps.
+- Il est interdit de participer simultanément à plusieurs scènes incompatibles dans le temps. Le double RP est accepté à condition que la première scène importante soit mise en pause selon les indications du staff.
 - En cas d'absence prolongée d'un participant, les joueurs peuvent convenir d'une solution ou demander l'intervention du staff.
 
 ## 09 — Intervention du staff
@@ -103,5 +103,3 @@ Les décisions du staff visent à préserver l'équilibre du jeu et la cohérenc
 ---
 
 > **Rappelez-vous : votre personnage peut être le plus puissant, le plus intelligent ou le plus influent du monde. Cela ne signifie pas qu'il doit gagner toutes les scènes.**
-
-Le RP est une histoire que nous écrivons ensemble. Laissez aux autres joueurs la possibilité d'y prendre leur place.
