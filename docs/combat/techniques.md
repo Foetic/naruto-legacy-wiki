@@ -13,7 +13,7 @@ Retrouvez ici les techniques accessibles aux shinobi, classées par domaine et p
 
 <div class="rule-index">
 
-  <a class="rule-index-card" href="techniques/regles-acquisition/">
+  <a class="rule-index-card" href="regles-acquisition/"
     <span class="rule-index-number">01</span>
     <span class="rule-index-kicker">PROGRESSION</span>
     <strong>Règles d'acquisition</strong>
@@ -21,7 +21,7 @@ Retrouvez ici les techniques accessibles aux shinobi, classées par domaine et p
     <span class="rule-index-link">EXPLORER LA SECTION →</span>
   </a>
 
-  <a class="rule-index-card" href="techniques/specialisations/">
+  <a class="rule-index-card" href="specialisations/"
     <span class="rule-index-number">02</span>
     <span class="rule-index-kicker">ARTS SHINOBI</span>
     <strong>Spécialisations</strong>
@@ -29,7 +29,7 @@ Retrouvez ici les techniques accessibles aux shinobi, classées par domaine et p
     <span class="rule-index-link">EXPLORER LA SECTION →</span>
   </a>
 
-  <a class="rule-index-card" href="techniques/natures-elementaires/">
+  <a class="rule-index-card" href="natures-elementaires/"
     <span class="rule-index-number">03</span>
     <span class="rule-index-kicker">NATURES DE CHAKRA</span>
     <strong>Natures élémentaires</strong>
@@ -37,7 +37,7 @@ Retrouvez ici les techniques accessibles aux shinobi, classées par domaine et p
     <span class="rule-index-link">EXPLORER LA SECTION →</span>
   </a>
 
-  <a class="rule-index-card" href="techniques/kekkei-genkai/">
+  <a class="rule-index-card" href="kekkei-genkai/"
     <span class="rule-index-number">04</span>
     <span class="rule-index-kicker">HÉRITAGES & CLANS</span>
     <strong>Kekkei Genkai</strong>
