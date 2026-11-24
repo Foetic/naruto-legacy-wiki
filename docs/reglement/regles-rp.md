@@ -44,7 +44,35 @@ Ces pratiques nuisent à l'équilibre du jeu et sont interdites.
 
 La puissance d'un personnage ne lui donne pas le droit d'ignorer les règles du jeu.
 
-## 04 — Cohérence et réalisme narratif
+## 4. ForceRP et MassRP
+
+**ForceRP — Imposer une action ou une scène**
+
+Le ForceRP consiste à imposer une action, une réaction ou une situation à un autre joueur sans lui laisser la possibilité de décider de la réaction de son personnage.
+
+Exemples :
+- Décider qu'un personnage est capturé sans lui laisser la possibilité de réagir.
+- Imposer une blessure, une humiliation ou une défaite à un autre personnage.
+- Forcer une interaction ou une relation entre deux personnages sans l'accord des joueurs concernés.
+- Décrire les conséquences d'une attaque comme certaines sans laisser de possibilité de défense.
+
+Chaque joueur doit conserver le contrôle de son personnage. Une scène doit être construite avec les autres participants, et non imposée unilatéralement.
+
+**MassRP — Prise en compte de la population et de l'environnement**
+
+Le MassRP consiste à prendre en compte la présence d'une population, de civils, de shinobis et de personnels dans les lieux où se déroule le RP, même lorsqu'ils ne sont pas incarnés par des joueurs.
+
+Exemples :
+- Un village ninja ne se résume pas aux seuls personnages présents dans la scène : il possède une population, des gardes, des commerçants et des shinobis.
+- Une attaque dans un lieu public peut attirer l'attention des habitants ou des autorités.
+- Une intrusion dans un bâtiment important ne signifie pas que celui-ci est vide ou sans surveillance.
+- Un événement majeur ne peut pas se dérouler comme si personne n'était présent pour le voir ou en subir les conséquences.
+
+Les joueurs doivent tenir compte de la logique de l'univers et de la présence de ces PNJ implicites. Il est interdit d'ignorer volontairement le MassRP pour faciliter une action ou éviter ses conséquences.
+
+**À retenir :** le ForceRP empêche de jouer le personnage des autres à leur place, tandis que le MassRP empêche de considérer un lieu peuplé comme un espace vide simplement parce qu'aucun joueur n'y est présent.
+
+## 05 — Cohérence et réalisme narratif
 
 - Les actions doivent respecter les capacités, les connaissances et l'expérience du personnage.
 - Les techniques utilisées doivent être cohérentes avec les affinités, spécialisations et compétences acquises.
@@ -53,7 +81,7 @@ La puissance d'un personnage ne lui donne pas le droit d'ignorer les règles du 
 - Les personnages ne sont pas omniscients et ne peuvent pas tout réussir.
 - Les évolutions importantes doivent être justifiées par une progression RP.
 
-## 05 — Respect du contexte et du lore
+## 06 — Respect du contexte et du lore
 
 - Le lore officiel de Naruto Legacy constitue la référence commune de l'univers.
 - Les événements importants de l'univers doivent être respectés et ne peuvent pas être modifiés unilatéralement.
@@ -61,7 +89,7 @@ La puissance d'un personnage ne lui donne pas le droit d'ignorer les règles du 
 - Il est interdit d'imposer une modification majeure du lore sans validation.
 - Les personnages doivent respecter le contexte politique, historique et géographique de l'univers.
 
-## 06 — Interactions et relations entre personnages
+## 07 — Interactions et relations entre personnages
 
 - Les relations amicales, familiales et conflictuelles sont autorisées.
 - Les relations amoureuses entre personnages sont acceptées, à condition que leur représentation reste strictement SFW.
@@ -72,7 +100,7 @@ La puissance d'un personnage ne lui donne pas le droit d'ignorer les règles du 
 - Les trahisons, rivalités, alliances et conflits sont autorisés lorsqu'ils sont cohérents avec le contexte RP.
 - Les relations entre personnages ne doivent jamais devenir un prétexte pour imposer des comportements ou des obligations HRP aux joueurs.
 
-## 07 — Actions à conséquences importantes
+## 08 — Actions à conséquences importantes
 
 Certaines actions peuvent modifier durablement l'histoire et nécessitent une attention particulière.
 
@@ -81,7 +109,7 @@ Certaines actions peuvent modifier durablement l'histoire et nécessitent une at
 - Les attaques contre les villages, les destructions majeures et les changements politiques importants doivent être encadrés par le staff.
 - Une action importante ne doit jamais être imposée à une communauté entière sans cadre narratif ou validation appropriée.
 
-## 08 — Déroulement des scènes RP
+## 09 — Déroulement des scènes RP
 
 - Les joueurs doivent respecter l'ordre de réponse convenu entre les participants.
 - Évitez les doubles actions qui empêchent les autres joueurs de réagir.
@@ -89,7 +117,7 @@ Certaines actions peuvent modifier durablement l'histoire et nécessitent une at
 - Il est interdit de participer simultanément à plusieurs scènes incompatibles dans le temps. Le double RP est accepté à condition que la première scène importante soit mise en pause selon les indications du staff.
 - En cas d'absence prolongée d'un participant, les joueurs peuvent convenir d'une solution ou demander l'intervention du staff.
 
-## 09 — Intervention du staff
+## 10 — Intervention du staff
 
 Le staff se réserve le droit d'intervenir lorsqu'une scène :
 
