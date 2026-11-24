@@ -4,9 +4,9 @@
 
 Les techniques élémentaires sont classées par nature et par rang : Genin, Chūnin, Tokubetsu Jōnin, Jōnin et Rang S.
 
-## Katon
+## Katon {.technique-section}
 
-### Genin
+### Genin {.technique-rank}
 
 **Katon : Hibashiri (Course de Feu)**  
 Projette une traînée de flammes qui se propage rapidement au sol afin d’embraser et de repousser les adversaires.
@@ -17,7 +17,7 @@ Diffuse une brume chargée de particules inflammables qui s’embrase au contact
 **Katon : Endan (Balle de Feu)**  
 Crache une petite boule de flammes vers l’adversaire afin de le brûler à distance.
 
-### Chūnin
+### Chūnin {.technique-rank}
 
 **Katon : Gōkakyū no Jutsu (Boule de feu suprême)**  
 Crache une imposante boule de feu capable d’embraser une large zone à l’impact.
@@ -28,7 +28,7 @@ Génère plusieurs petites boules de feu enflammées qui se dispersent dans diff
 **Katon : Ryūka no Jutsu (Le feu du dragon)**  
 Crache une longue flamme en forme de dragon qui se déplace rapidement vers la cible.
 
-### Tokubetsu Jōnin
+### Tokubetsu Jōnin {.technique-rank}
 
 **Katon : Haisekishō (Nuée de cendres)**  
 Expulse un nuage de cendres brûlantes qui aveugle, gêne la respiration et peut s’enflammer au contact d’une flamme.
@@ -39,7 +39,7 @@ Transforme une petite flamme fortement concentrée en une gigantesque explosion 
 **Katon : Karyūdan (Balle de Flamme Ascendante)**  
 Crache un puissant jet de flammes prenant la forme d’un dragon afin de frapper directement la cible.
 
-### Jōnin
+### Jōnin {.technique-rank}
 
 **Katon : Dai Endan (Embrasement suprême)**  
 Projette une gigantesque masse de flammes qui ravage tout sur son passage.
@@ -50,7 +50,7 @@ Crache un torrent de flammes en forme de dragon qui se divise pour frapper la ci
 **Katon : Zukokku (Le bûcher suprême)**  
 Libère une immense vague de flammes concentrées qui s’étend sur une vaste zone et embrase tout sur son passage.
 
-### Rang S
+### Rang S {.technique-rank}
 
 **Katon : Gōka Mekkyaku (Grande destruction infernale)**  
 Projette depuis la bouche un immense mur de flammes qui couvre une vaste zone et avance vers les adversaires.
@@ -60,9 +60,9 @@ Libère un gigantesque flux continu de flammes qui embrase une vaste zone et eng
 
 ---
 
-## Doton
+## Doton {.technique-section}
 
-### Genin
+### Genin {.technique-rank}
 
 **Doton : Shinjū Zanshu no Jutsu (Décapitation fatale)**  
 L’utilisateur s’enfonce sous terre et entraîne la cible dans le sol.
@@ -73,7 +73,7 @@ Recouvre le corps d’une couche de roche extrêmement résistante.
 **Doton : Iwa Shuriken (Shuriken de roche)**  
 Projectiles de roche façonnés par le Doton.
 
-### Chūnin
+### Chūnin {.technique-rank}
 
 **Doton : Doryūdan (Projectiles du Dragon de Terre)**  
 Un dragon de terre crache une succession de projectiles de boue.
@@ -84,7 +84,7 @@ Projection de boue utilisée comme attaque à distance.
 **Doton : Bunshin Torappu (Piège de clone)**  
 Crée un clone constitué de terre qui encaisse le coup.
 
-### Tokubetsu Jōnin
+### Tokubetsu Jōnin {.technique-rank}
 
 **Doton : Doryūheki (Rempart de terre)**  
 Fait surgir un imposant mur de terre pour bloquer une attaque.
@@ -95,7 +95,7 @@ Enferme l’adversaire dans un dôme de terre capable de se régénérer.
 **Doton : Doryūkatsu (Fracture du Sol)**  
 Fend et sépare brutalement le terrain.
 
-### Jōnin
+### Jōnin {.technique-rank}
 
 **Doton : Yomi Numa (Marécage des Limbes)**  
 Transforme le sol en immense marécage afin d’immobiliser et d’engloutir les adversaires.
@@ -106,7 +106,7 @@ Transforme le terrain en un puissant courant de boue qui emporte les adversaires
 **Doton : Iwayado Kuzushi (Destruction de la Roche)**  
 Provoque l’effondrement des roches environnantes.
 
-### Rang S
+### Rang S {.technique-rank}
 
 **Doton : Jūka Keijūgan no Jutsu (Technique de la Roche à Lourdeur Variable)**  
 L’utilisateur combine les principes du Keijūgan et du Kajūgan afin de modifier instantanément le poids d’une matière ou d’une cible.
@@ -116,9 +116,9 @@ Crée un gigantesque golem constitué de roche.
 
 ---
 
-## Fūton
+## Fūton {.technique-section}
 
-### Genin
+### Genin {.technique-rank}
 
 **Fūton : Kazekiri no Jutsu (Trancheuse de Vent)**  
 Crée une lame de vent capable de trancher les cibles sur sa trajectoire.
@@ -129,7 +129,7 @@ Expulse par la bouche une puissante bourrasque capable de repousser tout ce qui 
 **Fūton : Reppūshō (Paume du Bourrasque)**  
 Comprime le vent entre ses mains puis libère une violente bourrasque capable de renverser l’adversaire et d’accroître la vitesse des projectiles lancés avec elle.
 
-### Chūnin
+### Chūnin {.technique-rank}
 
 **Fūton : Kamaitachi no Jutsu (Les Lames du Vent)**  
 Génère une puissante bourrasque chargée de chakra qui devient suffisamment tranchante pour lacérer les adversaires.
@@ -140,7 +140,7 @@ Libère depuis la main une puissante vague de vent tranchante capable de lacére
 **Fūton : Fūjin no Jutsu (Technique de la Poussière)**  
 Crée un flux de vent à très grande vitesse chargé de particules de poussière capables de ravager tout ce qui se trouve pris dans son courant.
 
-### Tokubetsu Jōnin
+### Tokubetsu Jōnin {.technique-rank}
 
 **Fūton : Ōkamaitachi no Jutsu (Grande Faux de la Belette)**  
 Génère d’immenses courants d’air qui s’entrechoquent afin de lacérer les adversaires sur une vaste zone.
@@ -151,7 +151,7 @@ Expire une grande lame de vent en tournant sur lui-même, couvrant une large zon
 **Fūton : Shinkū Renpa (Vagues du Vide)**  
 Expire plusieurs lames de vent successives dans différentes directions afin de frapper plusieurs cibles simultanément.
 
-### Jōnin
+### Jōnin {.technique-rank}
 
 **Fūton : Shinkūjin (Lame du Vide)**  
 Imprègne une arme de chakra Fūton afin d’en augmenter considérablement la portée, le tranchant et la puissance de coupe.
@@ -162,7 +162,7 @@ Crée plusieurs sphères de vent comprimé et les projette vers l’adversaire s
 **Fūton : Atsugai (Pression Destructrice)**  
 Libère une masse de vent extrêmement comprimée et dense qui explose à l’impact en ravageant une vaste zone.
 
-### Rang S
+### Rang S {.technique-rank}
 
 **Fūton : Shinkū Taigyoku (Grande Sphère du Vide)**  
 Condense une grande quantité de chakra Fūton en une sphère massive de vent comprimé avant de la projeter sur l’adversaire.
@@ -172,9 +172,9 @@ Forme un gigantesque shuriken de chakra Fūton dont l’impact libère d’innom
 
 ---
 
-## Suiton
+## Suiton {.technique-section}
 
-### Genin
+### Genin {.technique-rank}
 
 **Suiton : Teppodama (Bombe aqueuse)**  
 Crache une boule d’eau comprimée à grande vitesse afin de frapper violemment l’adversaire.
@@ -185,7 +185,7 @@ Crée un clone entièrement constitué d’eau, capable de se battre aux côtés
 **Suiton : Mizushuriken (Shuriken d'eau)**  
 Forme des shuriken constitués d’eau et les projette à grande vitesse vers l’adversaire.
 
-### Chūnin
+### Chūnin {.technique-rank}
 
 **Suiton : Suiro no Jutsu (Prison aqueuse)**  
 Enferme l’adversaire dans une sphère d’eau dont la prison ne peut être maintenue qu’en gardant un contact avec celle-ci.
@@ -196,7 +196,7 @@ Condense l’eau en une forme acérée ressemblant à un croc et la projette ver
 **Suiton : Suimuichi (Le fouet d'eau)**  
 Manipule l’eau pour former un fouet liquide permettant de frapper, entraver ou repousser l’adversaire.
 
-### Tokubetsu Jōnin
+### Tokubetsu Jōnin {.technique-rank}
 
 **Suiton : Suijinheki (Barrière Aqueuse)**  
 Crée une imposante barrière circulaire d’eau autour de l’utilisateur afin de bloquer les attaques adverses.
@@ -207,7 +207,7 @@ Génère une énorme quantité d’eau qui se transforme en une vague massive ca
 **Suiton : Suiryūdan no Jutsu (Dragon aqueux)**  
 Forme un gigantesque dragon d’eau qui fonce sur l’adversaire et le frappe avec une grande puissance.
 
-### Jōnin
+### Jōnin {.technique-rank}
 
 **Suiton : Suiryū Kadan (Morsure du Dragon d'eau)**  
 Crée une puissante forme de dragon aqueux qui mord et percute violemment l’adversaire.
@@ -218,7 +218,7 @@ Transforme une grande quantité d’eau en un requin gigantesque qui fonce sur l
 **Suiton : Daibafuku no Jutsu (Grande Cataracte)**  
 Déchaîne une immense vague d’eau qui s’élève avant de s’abattre sur l’adversaire comme une gigantesque cataracte.
 
-### Rang S
+### Rang S {.technique-rank}
 
 **Suiton : Goshokusame (5 Requins Affamés)**  
 Crée cinq requins d’eau qui encerclent et attaquent simultanément l’adversaire, notamment sous l’eau.
@@ -228,9 +228,9 @@ Convertit le chakra en eau et projette un puissant jet d’eau sous très haute 
 
 ---
 
-## Raiton
+## Raiton {.technique-section}
 
-### Genin
+### Genin {.technique-rank}
 
 **Raiton : Jinraisen (Éclair Foudroyant)**  
 Malaxe son chakra Raiton pour lui donner une forme de flèche, puis projette cette flèche de foudre vers la cible.
@@ -241,7 +241,7 @@ Concentre une décharge de chakra Raiton dans la paume afin de frapper directeme
 **Raiton : Ōbā Dōraibu (Overdrive)**  
 Accélère les signaux nerveux reliant le cerveau aux muscles afin d’augmenter la vitesse des mouvements et de renforcer le tranchant des attaques au corps à corps.
 
-### Chūnin
+### Chūnin {.technique-rank}
 
 **Raiton : Jibashiri (Course de l'Éclair)**  
 Diffuse une onde électrique à travers le sol jusqu’à l’adversaire afin de l’électriser, avec une efficacité accrue lorsqu’elle est combinée au Suiton.
@@ -252,7 +252,7 @@ Forme une boule de foudre concentrée entre les mains ou les armes avant de la p
 **Raiton : Hebi Hikazuchi (Foudre Serpentine)**  
 Génère une décharge électrique prenant la forme d’un serpent de chakra afin d’attaquer l’adversaire à distance ; la technique peut également électrifier le corps de l’utilisateur lorsqu’il est immergé.
 
-### Tokubetsu Jōnin
+### Tokubetsu Jōnin {.technique-rank}
 
 **Raiton : Shishū Shibari (Les Quatre piliers de la foudre)**  
 Fait apparaître quatre piliers de pierre autour de la cible, entre lesquels se forment des éclairs qui l’immobilisent tout en lui infligeant d’importants dégâts.
@@ -263,7 +263,7 @@ Projette depuis la bouche un puissant éclair de chakra Raiton capable de couvri
 **Raiton : Raijū (Faucon de foudre)**  
 Manipule du chakra Raiton pour former une bête de foudre reliée à la main de l’utilisateur, capable de poursuivre et d’attaquer rapidement la cible.
 
-### Jōnin
+### Jōnin {.technique-rank}
 
 **Raiton : Sandāboruto (Éclair)**  
 Libère une importante décharge électrique depuis les paumes afin de frapper plusieurs adversaires simultanément, avec une puissance accrue en présence d’eau.
@@ -274,7 +274,7 @@ Crée un clone constitué de chakra Raiton qui peut combattre aux côtés de l�
 **Raiton : Shinden (Éclair Violet)**  
 Libère une grande quantité de foudre violette depuis le corps ou les mains afin d’attaquer les adversaires à moyenne portée.
 
-### Rang S
+### Rang S {.technique-rank}
 
 **Raiton : Kirin (Chien de Foudre)**  
 Utilise la foudre naturelle accumulée dans les nuages orageux et en contrôle la trajectoire avec son chakra avant de la faire s’abattre sur la cible à une vitesse fulgurante.
