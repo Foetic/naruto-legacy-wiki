@@ -58,4 +58,6 @@ nav:
       - Techniques: combat/techniques.md
       - Passifs: combat/passifs.md
       - Affinités: combat/affinites.md
-  - Archives: archives/index.md
+  - Archives: archives/index.md  
+  - Techniques & Capacités:
+      - Présentation: techniques/index.md
